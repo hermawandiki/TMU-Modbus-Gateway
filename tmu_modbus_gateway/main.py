@@ -25,14 +25,14 @@ CONFIG = {
 
 ts = time.strftime("%Y%m%d")
 # logName = r'/home/pi/tmu-v2-smart/assets/sysdata-test/syslog-' + ts + '.log'
-logName = r'D:/tmu_modbus_gateway/log/syslog-' + ts + '.log'
+logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/log/syslog-' + ts + '.log'
 logging.basicConfig(
     filename=logName,
     format='%(asctime)s | %(levelname)s: %(message)s',
     level=logging.DEBUG
 )
 
-os.chdir('D:/tmu_modbus_gateway/')
+os.chdir('D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/')
 
 def crc16_pure(data: bytes) -> int:
     crc = 0xFFFF
@@ -147,7 +147,7 @@ class TCPServer:
         sock.setblocking(False)
         self.sel.register(sock, selectors.EVENT_READ, data=("LISTENER", identity))
         logging.info(f"Listening on TCP port {port} for slave ID {identity}.")
-        self.log_cb(f"Listening on TCP port {port} for slave ID {identity}.")
+        # self.log_cb(f"Listening on TCP port {port} for slave ID {identity}.")
     
     def run(self):
         self.running = True
