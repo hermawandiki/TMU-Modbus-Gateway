@@ -13,7 +13,7 @@ from toolboxTMU import initTkinter
 
 CONFIG = {
     "TCP_HOST": "0.0.0.0",
-    "SERIAL_PORT": "/dev/ttyS0",
+    "SERIAL_PORT": "COM3",
     "BAUDRATE": 9600,
     "TIMEOUT": 1.0,
     "PORT_MAPPING": {
@@ -29,7 +29,8 @@ logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/log/syslog-' + ts + 
 logging.basicConfig(
     filename=logName,
     format='%(asctime)s | %(levelname)s: %(message)s',
-    level=logging.DEBUG
+    level=logging.DEBUG,
+    force=True
 )
 
 os.chdir('D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/')
@@ -88,10 +89,10 @@ class SerialWorker:
                 timeout=CONFIG["TIMEOUT"]
             )
             logging.info(f"Serial port {CONFIG['SERIAL_PORT']} opened successfully.")
-            self.log_cb(f"Serial port {CONFIG['SERIAL_PORT']} opened successfully.")
+            self.log_cb('D', f"Serial port {CONFIG['SERIAL_PORT']} opened successfully.")
         except Exception as e:
             logging.error(f"Failed to open serial port {CONFIG['SERIAL_PORT']}: {e}")
-            self.log_cb(f"Failed to open serial port {CONFIG['SERIAL_PORT']}: {e}")
+            self.log_cb('D', f"Failed to open serial port {CONFIG['SERIAL_PORT']}: {e}")
             self.running = False
             return
     
@@ -235,7 +236,9 @@ class AppManager:
         self.main_screen.stopBtn1["text"] = "Stop"
         
         self.ser_worker = SerialWorker(self.request_queue, self.log_callback)
+        logging.info("Memulai jalur komunikasi serial...")
         self.tcp_worker = TCPServer(self.request_queue, self.log_callback)
+        logging.info("Memulai jalur komunikasi TCP...")
 
         threading.Thread(target=self.ser_worker.run, daemon=True, name="Th-Serial").start()
         threading.Thread(target=self.tcp_worker.run, daemon=True, name="Th-TCP").start()
@@ -281,6 +284,7 @@ class AppManager:
 
 if __name__ == "__main__":
     try:
+        logging.debug("Memulai Aplikasi Modbus Gateway...")
         AppManager()
     except KeyboardInterrupt:
         logging.info("Dihentikan secara manual (Ctrl+C).")
