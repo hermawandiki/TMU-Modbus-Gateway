@@ -83,7 +83,8 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
             else:
                 exc = bytes([fc | 0x80, 0x0B])
                 conn.sendall(tx_id + b"\x00\x00" + struct.pack(">H", len(exc) + 1) + bytes([unit_id]) + exc)
-                print("Respond Timeout / CRC Invalid")
+                print("[ERR] Respond Timeout / CRC Invalid")
+                print(f"[ERR] {rtu_res.hex(' ')}" if rtu_res else "[ERR] No Response")
             print("")
                 
     except Exception: pass
