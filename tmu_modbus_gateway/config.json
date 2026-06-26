@@ -1,0 +1,15 @@
+{
+    "host": "0.0.0.0",
+    "serial_port": {
+        "port": "COM10",
+        "baudrate": 9600,
+        "parity": "N",
+        "stopbits": 1,
+        "bytesize": 8,
+        "timeout": 1.0
+    },
+    "port_slave_map": {
+        "5020": 10,
+        "5030": 2
+    }
+}
