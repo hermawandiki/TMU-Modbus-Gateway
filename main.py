@@ -7,6 +7,14 @@ import json
 import sys
 import os
 import logging
+import random
+import Adafruit_ADS1x15
+
+adc = Adafruit_ADS1x15.ADS1115(address=0x48, busnum=1)
+
+adc_channels = 2
+adc_registers = [0] * adc_channels
+adc_lock = threading.Lock()
 
 # ts = time.strftime("%Y%m%d")
 # # logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/logsys/logsys-' + ts + '.log'
@@ -22,7 +30,7 @@ def load_config(filename="config.json"):
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_path = os.path.join(base_dir, filename)
         # logging.info(f"Loading config from: {config_path}")
-        print(f"[INFO ] Loading config from: {config_path}")
+        # print(f"[INFO ] Loading config from: {config_path}")
         
         with open(config_path, "r") as f:
             config = json.load(f)
@@ -62,6 +70,68 @@ def tcp2rtu(tcp_frame: bytes, slave_id: int) -> bytes:
 def rtu2tcp(rtu_frame: bytes, tx_id: bytes, unit_id: int) -> bytes:
     pdu = rtu_frame[1:-2]
     return tx_id + b"\x00\x00" + struct.pack(">H", len(pdu) + 1) + bytes([unit_id]) + pdu
+
+def read_adc(channel):
+    # return adc.read_adc(channel, gain=1)
+    return random.randint(1000,1100)
+
+def adc_handler():
+    while True:
+        try:
+            new_values = [read_adc(i) for i in range(adc_channels)]
+            with adc_lock:
+                for i in range(adc_channels):
+                    adc_registers[i] = new_values[i]
+            time.sleep(0.05)
+        except Exception as e:
+            print(f"[ERROR] ADC Handler error: {e}")
+            time.sleep(2)
+
+def handle_adc_client(conn: socket.socket, addr, port: int):
+    print(f"[INFO ] Connected to ADC on port {port} from {addr[0]}:{addr[1]}")
+    try:
+        while True:
+            tcp_req = conn.recv(1024)
+            if not tcp_req: break
+            if len(tcp_req) < 12: continue
+
+            tx_id, unit_id, fc = tcp_req[0:2], tcp_req[6], tcp_req[7]
+            
+            if fc in (0x03, 0x04):
+                start_addr, qty = struct.unpack(">HH", tcp_req[8:12])
+                
+                with adc_lock:
+                    if start_addr + qty <= adc_channels:
+                        byte_count = qty * 2
+                        data_bytes = b"".join(struct.pack(">h", int(adc_registers[i])) for i in range(start_addr, start_addr + qty))
+                        
+                        res_length = 3 + byte_count
+                        response = tx_id + b"\x00\x00" + struct.pack("<H", res_length) + bytes([unit_id, fc, byte_count]) + data_bytes
+                        conn.sendall(response)
+                    else:
+                        exc = bytes([fc | 0x80, 0x02])
+                        conn.sendall(tx_id + b"\x00\x00" + struct.pack(">H", 3) + bytes([unit_id]) + exc)
+            else:
+                exc = bytes([fc | 0x80, 0x01])
+                conn.sendall(tx_id + b"\x00\x00" + struct.pack("<H", 3) + bytes([unit_id]) + exc)
+                
+    except ConnectionResetError:
+        print(f"[WARN ] Connection reset by {addr[0]}:{addr[1]}")
+    except Exception as e:
+        pass
+    finally:
+        conn.close()
+        print(f"[INFO ] Disconnected ADC Port {port} from {addr[0]}:{addr[1]}")
+
+def start_adc_listener(host: str, port: int):
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    server.bind((host, port))
+    server.listen(5)
+    
+    while True:
+        conn, addr = server.accept()
+        threading.Thread(target=handle_adc_client, args=(conn, addr, port), daemon=True).start()
 
 class SerialBus:
     def __init__(self, serial_cfg: dict):
@@ -124,7 +194,7 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
                 # logging.error(f"Respond Timeout / CRC Invalid")
                 # print(f"[ERROR] Respond Timeout / CRC Invalid")
                 # logging.error(f"{rtu_res.hex(' ')}" if rtu_res else "No Response")
-                print(f"[ERROR] {rtu_res.hex(' ')}" if rtu_res else "[ERROR] No Response")
+                print(f"[ERROR] {rtu_res.hex(' ')}" if rtu_res else f"[ERROR] Slave ID {slave_id} No Response")
     except ConnectionResetError:
         # logging.warning(f" Connection reset by {addr[0]}:{addr[1]}")
         print(f"[WARN ] Connection reset by {addr[0]}:{addr[1]}")
@@ -149,11 +219,23 @@ def main():
     print("=== TMU Modbus Gateway ===")
     host, serial_cfg, port_slave_map = load_config("config.json")
     bus = SerialBus(serial_cfg)
+    
+    adc_handler_started = False
 
-    for port, slave_id in port_slave_map.items():
-        threading.Thread(target=start_listener, args=(host, port, slave_id, bus), daemon=True).start()
-        # logging.info(f"Ready listening on Port {port} for Slave ID {slave_id}")
-        print(f"[INFO ] Ready listening on Port {port} for Slave ID {slave_id}")
+    for port, target in port_slave_map.items():
+        if str(target).upper() == "ADC":
+            if not adc_handler_started:
+                threading.Thread(target=adc_handler, daemon=True).start()
+            threading.Thread(target=start_adc_listener, args=(host, port), daemon=True).start()
+            print(f"[INFO ] Ready listening on Port {port} for ADC")
+        else:
+            try:
+                slave_id = int(target)
+                threading.Thread(target=start_listener, args=(host, port, slave_id, bus), daemon=True).start()
+                # logging.info(f"Ready listening on Port {port} for Slave ID {slave_id}")
+                print(f"[INFO ] Ready listening on Port {port} for Slave ID {slave_id}")
+            except ValueError:
+                print(f"[ERROR] Invalid target '{target}' for port {port}. Must be 'ADC' or integer SLave ID")
 
     try:
         threading.Event().wait()
