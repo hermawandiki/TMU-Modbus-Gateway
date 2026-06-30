@@ -9,7 +9,6 @@ import os
 import logging
 import random
 import Adafruit_ADS1x15
-<<<<<<< HEAD
 import smbus2
 from PIL import Image, ImageDraw, ImageFont
 
@@ -23,14 +22,6 @@ global_port_map = {}
 I2C_BUS = 1
 I2C_ADDR = 0x3C
 bus = smbus2.SMBus(I2C_BUS)
-=======
-
-adc = Adafruit_ADS1x15.ADS1115(address=0x48, busnum=1)
-
-adc_channels = 2
-adc_registers = [0] * adc_channels
-adc_lock = threading.Lock()
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
 
 # ts = time.strftime("%Y%m%d")
 # # logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/logsys/logsys-' + ts + '.log'
@@ -41,7 +32,6 @@ adc_lock = threading.Lock()
 #     level=logging.DEBUG
 # )
 
-<<<<<<< HEAD
 def cmd(c):
 	bus.write_byte_data(I2C_ADDR, 0x00, c)
 	
@@ -82,9 +72,6 @@ def tampilkan(teks: str):
     
 def load_config(filename="config.json"):
     global global_port_map
-=======
-def load_config(filename="config.json"):
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
     try:
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_path = os.path.join(base_dir, filename)
@@ -98,10 +85,7 @@ def load_config(filename="config.json"):
         serial_cfg = config.get("serial_port", {})
         
         port_slave_map = {int(k): v for k, v in config.get("port_slave_map", {}).items()}
-<<<<<<< HEAD
         global_port_map = port_slave_map
-=======
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
         
         # logging.info(f"Config loaded with OK")
         print(f"[INFO ] Config loaded with OK")
@@ -114,12 +98,9 @@ def load_config(filename="config.json"):
         # logging.error(f"Format {filename} invalid.")
         print(f"[ERROR] Format {filename} invalid.")
         sys.exit(1)
-<<<<<<< HEAD
     
     except Exception as e:
         print(f"[ERROR] OLED crashed or HW not found: {e}")
-=======
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
 
 def calculate_crc16(data: bytes) -> bytes:
     crc = 0xFFFF
@@ -140,7 +121,6 @@ def rtu2tcp(rtu_frame: bytes, tx_id: bytes, unit_id: int) -> bytes:
     pdu = rtu_frame[1:-2]
     return tx_id + b"\x00\x00" + struct.pack(">H", len(pdu) + 1) + bytes([unit_id]) + pdu
 
-<<<<<<< HEAD
 def adc_handler():
     while True:
         try:
@@ -156,19 +136,6 @@ def adc_handler():
                 
                 adc_registers[0] = oil_temp_m
                 adc_registers[1] = oil_press_m
-=======
-def read_adc(channel):
-    # return adc.read_adc(channel, gain=1)
-    return random.randint(1000,1100)
-
-def adc_handler():
-    while True:
-        try:
-            new_values = [read_adc(i) for i in range(adc_channels)]
-            with adc_lock:
-                for i in range(adc_channels):
-                    adc_registers[i] = new_values[i]
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
             time.sleep(0.05)
         except Exception as e:
             print(f"[ERROR] ADC Handler error: {e}")
@@ -205,11 +172,7 @@ def handle_adc_client(conn: socket.socket, addr, port: int):
     except ConnectionResetError:
         print(f"[WARN ] Connection reset by {addr[0]}:{addr[1]}")
     except Exception as e:
-<<<<<<< HEAD
         print(f"Unexpected error on ADC: {e}")
-=======
-        pass
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
     finally:
         conn.close()
         print(f"[INFO ] Disconnected ADC Port {port} from {addr[0]}:{addr[1]}")
@@ -227,7 +190,6 @@ def start_adc_listener(host: str, port: int):
 class SerialBus:
     def __init__(self, serial_cfg: dict):
         self._lock = threading.Lock()
-<<<<<<< HEAD
         self.serial_cfg = serial_cfg
         self.timeout = serial_cfg.get("timeout", 1.0)
         self._ser = None
@@ -244,31 +206,18 @@ class SerialBus:
             self._ser = serial.Serial(**self.serial_cfg)
             # logging.info(f"Connected to {serial_cfg.get('port')} at {serial_cfg.get('baudrate')}")
             print(f"[INFO ] Connected to {self.serial_cfg.get('port')} at {self.serial_cfg.get('baudrate')}")
-=======
-        self.timeout = serial_cfg.get("timeout", 1.0)
-        try:
-            self._ser = serial.Serial(**serial_cfg)
-            # logging.info(f"Connected to {serial_cfg.get('port')} at {serial_cfg.get('baudrate')}")
-            print(f"[INFO ] Connected to {serial_cfg.get('port')} at {serial_cfg.get('baudrate')}")
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
         except Exception as e:
             # logging.error(f"Failed to open serial: {e}")
             print(f"[ERROR] Failed to open serial: {e}")    
             self._ser = None
 
     def send_and_receive(self, request: bytes) -> bytes:
-<<<<<<< HEAD
         with self._lock:
             if self._ser is None:
                 self.connect()
                 if self._ser is None:
                     return b""
                     
-=======
-        if not self._ser: return b""
-        
-        with self._lock:
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
             try:
                 self._ser.reset_input_buffer()
                 self._ser.write(request)
@@ -284,7 +233,6 @@ class SerialBus:
                     time.sleep(0.005)
                 
                 return response
-<<<<<<< HEAD
                 
             except serial.SerialException as e:
                 print(f"[ERROR] RS485 connection lost: {e}")
@@ -295,9 +243,6 @@ class SerialBus:
                 return b""
             except Exception as e:
                 print(f"Unexpected error on serial: {e}")
-=======
-            except Exception:
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
                 return b""
 
 def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: SerialBus):
@@ -353,7 +298,6 @@ def main():
     bus = SerialBus(serial_cfg)
     
     adc_handler_started = False
-<<<<<<< HEAD
     initOled()
     
     formatTeks = "\n       ".join([f"{k} -> {v}" for k, v in global_port_map.items()])
@@ -362,8 +306,6 @@ def main():
 	IP   : 192.168.4.200
 	PORT : {formatTeks}
 	""")
-=======
->>>>>>> aeb94afa23e38699d02ee6840f03a6df15e9fb70
 
     for port, target in port_slave_map.items():
         if str(target).upper() == "ADC":
