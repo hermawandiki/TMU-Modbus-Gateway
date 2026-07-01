@@ -1,0 +1,13 @@
+2026-07-01 08:26:50,904 | INFO: 
+
+
+
+2026-07-01 08:26:50,904 | INFO: === TMU Modbus Gateway ===
+2026-07-01 08:26:50,904 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 08:26:50,905 | INFO: Config loaded with OK
+2026-07-01 08:26:50,907 | INFO: GUI started (PID: 2408)
+2026-07-01 08:26:50,908 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 08:26:51,076 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 08:26:51,077 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 08:26:51,078 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 08:27:09,261 | INFO: Gateway Stopped.

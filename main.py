@@ -1,6 +1,7 @@
 import socket
 import struct
 import threading
+import subprocess
 import serial
 import time
 import json
@@ -18,19 +19,46 @@ adc_channels = 4
 adc_registers = [0] * adc_channels
 adc_lock = threading.Lock()
 global_port_map = {}
+gui_process = None
+GUI_DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gui_data.json")
+
+GUI_PHYSICAL_KEYS = [
+    "Oil Level",
+    "Oil Temperature",
+    "Oil Pressure",
+    "Bus U Temperature",
+    "Bus V Temperature",
+    "Bus W Temperature",
+    "WIT U Temperature",
+    "WIT V Temperature",
+    "WIT W Temperature",
+]
+
+GUI_ELECTRICAL_KEYS = [
+    "U-N Phase Voltage",
+    "V-N Phase Voltage",
+    "W-N Phase Voltage",
+    "U-V Phase Voltage",
+    "V-W Phase Voltage",
+    "U-W Phase Voltage",
+    "U Phase Current",
+    "V Phase Current",
+    "W Phase Current",
+    "Average Current",
+]
 
 I2C_BUS = 1
 I2C_ADDR = 0x3C
 bus = smbus2.SMBus(I2C_BUS)
 
-# ts = time.strftime("%Y%m%d")
-# # logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/logsys/logsys-' + ts + '.log'
-# logName = r'/home/pi/TMU-Modbus-Gateway/tmu_modbus_gateway/logsys/logsys-' + ts + '.log'
-# logging.basicConfig(
-#     filename=logName,
-#     format='%(asctime)s | %(levelname)s: %(message)s',
-#     level=logging.DEBUG
-# )
+ts = time.strftime("%Y%m%d")
+# logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/logsys/logsys-' + ts + '.log'
+logName = r'/home/pi/TMU-Modbus-Gateway/logsys/logsys-' + ts + '.log'
+logging.basicConfig(
+    filename=logName,
+    format='%(asctime)s | %(levelname)s: %(message)s',
+    level=logging.INFO,
+)
 
 def cmd(c):
 	bus.write_byte_data(I2C_ADDR, 0x00, c)
@@ -57,7 +85,7 @@ def show(image):
 	for i in range(0, len(buf), 16):
 		bus.write_i2c_block_data(I2C_ADDR, 0x40, buf[i:i+16])
 
-def tampilkan(teks: str):
+def showOled(teks: str):
 	try:
 		font = Image.truetype("/usr/share/fonts/truetype/dejavu/DeJaVuSansMono.ttf", 10)
 	except:
@@ -66,8 +94,8 @@ def tampilkan(teks: str):
 	img = Image.new("1", (128, 64))
 	draw = ImageDraw.Draw(img)
 	
-	for i, baris in enumerate(teks.splitlines()):
-		draw.text((0, i * 12), baris, font=font, fill=255)
+	for i, row in enumerate(teks.splitlines()):
+		draw.text((0, i * 12), row, font=font, fill=255)
 	show(img)
     
 def load_config(filename="config.json"):
@@ -75,8 +103,8 @@ def load_config(filename="config.json"):
     try:
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_path = os.path.join(base_dir, filename)
-        # logging.info(f"Loading config from: {config_path}")
-        # print(f"[INFO ] Loading config from: {config_path}")
+        logging.info(f"Loading config from: {config_path}")
+        print(f"[INFO ] Loading config from: {config_path}")
         
         with open(config_path, "r") as f:
             config = json.load(f)
@@ -87,19 +115,19 @@ def load_config(filename="config.json"):
         port_slave_map = {int(k): v for k, v in config.get("port_slave_map", {}).items()}
         global_port_map = port_slave_map
         
-        # logging.info(f"Config loaded with OK")
+        logging.info(f"Config loaded with OK")
         print(f"[INFO ] Config loaded with OK")
         return host, serial_cfg, port_slave_map
     except FileNotFoundError:
-        # logging.error(f"File {filename} not found.")
+        logging.error(f"File {filename} not found.")
         print(f"[ERROR] File {filename} not found.")    
         sys.exit(1)
     except json.JSONDecodeError:
-        # logging.error(f"Format {filename} invalid.")
+        logging.error(f"Format {filename} invalid.")
         print(f"[ERROR] Format {filename} invalid.")
         sys.exit(1)
-    
     except Exception as e:
+        logging.error(f"OLED crashed of HW not found: {e}")
         print(f"[ERROR] OLED crashed or HW not found: {e}")
 
 def calculate_crc16(data: bytes) -> bytes:
@@ -138,10 +166,12 @@ def adc_handler():
                 adc_registers[1] = oil_press_m
             time.sleep(0.05)
         except Exception as e:
+            logging.error(f"ADC Handler error: {e}")
             print(f"[ERROR] ADC Handler error: {e}")
             time.sleep(2)
 
 def handle_adc_client(conn: socket.socket, addr, port: int):
+    logging.info(f"Connected to ADC on port {port} from {addr[0]}:{addr[1]}")
     print(f"[INFO ] Connected to ADC on port {port} from {addr[0]}:{addr[1]}")
     try:
         while True:
@@ -170,11 +200,14 @@ def handle_adc_client(conn: socket.socket, addr, port: int):
                 conn.sendall(tx_id + b"\x00\x00" + struct.pack("<H", 3) + bytes([unit_id]) + exc)
                 
     except ConnectionResetError:
+        logging.warning(f" Connection reset by {addr[0]}:{addr[1]}")
         print(f"[WARN ] Connection reset by {addr[0]}:{addr[1]}")
     except Exception as e:
-        print(f"Unexpected error on ADC: {e}")
+        logging.error(f"Unexpected error on ADC: {e}")
+        print(f"[ERROR] Unexpected error on ADC: {e}")
     finally:
         conn.close()
+        logging.info(f"Disconnected ADC Port {port} from {addr[0]}:{addr[1]}")
         print(f"[INFO ] Disconnected ADC Port {port} from {addr[0]}:{addr[1]}")
 
 def start_adc_listener(host: str, port: int):
@@ -204,10 +237,10 @@ class SerialBus:
         
         try:
             self._ser = serial.Serial(**self.serial_cfg)
-            # logging.info(f"Connected to {serial_cfg.get('port')} at {serial_cfg.get('baudrate')}")
+            logging.info(f"Connected to {self.serial_cfg.get('port')} at {self.serial_cfg.get('baudrate')}")
             print(f"[INFO ] Connected to {self.serial_cfg.get('port')} at {self.serial_cfg.get('baudrate')}")
         except Exception as e:
-            # logging.error(f"Failed to open serial: {e}")
+            logging.error(f"Failed to open serial: {e}")
             print(f"[ERROR] Failed to open serial: {e}")    
             self._ser = None
 
@@ -235,18 +268,21 @@ class SerialBus:
                 return response
                 
             except serial.SerialException as e:
+                logging.error(f"RS485 connection lost: {e}")
                 print(f"[ERROR] RS485 connection lost: {e}")
                 self._ser = None
                 return b""
             except OSError as e:
-                print(f"OS Error on serial: {e}")
+                logging.error(f"OS Error on serial: {e}")
+                print(f"[ERROR] OS Error on serial: {e}")
                 return b""
             except Exception as e:
-                print(f"Unexpected error on serial: {e}")
+                logging.error(f"Unexpected error on serial: {e}")
+                print(f"[ERROR] Unexpected error on serial: {e}")
                 return b""
 
 def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: SerialBus):
-    # logging.info(f"Connected to {port} -> Slave {slave_id} from {addr[0]}:{addr[1]}")
+    logging.info(f"Connected to {port} -> Slave {slave_id} from {addr[0]}:{addr[1]}")
     print(f"[INFO ] Connected to {port} -> Slave {slave_id} from {addr[0]}:{addr[1]}")
     try:
         while True:
@@ -270,15 +306,17 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
                 conn.sendall(tx_id + b"\x00\x00" + struct.pack(">H", len(exc) + 1) + bytes([unit_id]) + exc)
                 # logging.error(f"Respond Timeout / CRC Invalid")
                 # print(f"[ERROR] Respond Timeout / CRC Invalid")
-                # logging.error(f"{rtu_res.hex(' ')}" if rtu_res else "No Response")
+                logging.error(f"{rtu_res.hex(' ')}" if rtu_res else f"Slave ID {slave_id} No Response")
                 print(f"[ERROR] {rtu_res.hex(' ')}" if rtu_res else f"[ERROR] Slave ID {slave_id} No Response")
     except ConnectionResetError:
-        # logging.warning(f" Connection reset by {addr[0]}:{addr[1]}")
+        logging.warning(f" Connection reset by {addr[0]}:{addr[1]}")
         print(f"[WARN ] Connection reset by {addr[0]}:{addr[1]}")
-    except Exception: pass
+    except Exception as e:
+        logging.error(f"Unexpected error: {e}")
+        print(f"[ERROR] Unexpected error: {e}")
     finally:
         conn.close()
-        # logging.info(f"Disconnected Port {port} from {addr[0]}:{addr[1]}")
+        logging.info(f"Disconnected Port {port} from {addr[0]}:{addr[1]}")
         print(f"[INFO ] Disconnected Port {port} from {addr[0]}:{addr[1]}")
 
 def start_listener(host: str, port: int, slave_id: int, bus: SerialBus):
@@ -291,20 +329,151 @@ def start_listener(host: str, port: int, slave_id: int, bus: SerialBus):
         conn, addr = server.accept()
         threading.Thread(target=handle_client, args=(conn, addr, port, slave_id, bus), daemon=True).start()
 
+def start_gui_process():
+    global gui_process
+    if gui_process is not None and gui_process.poll() is None:
+        return
+
+    gui_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gui.py")
+    if not os.path.exists(gui_path):
+        logging.warning(f"gui.py not found at {gui_path}")
+        print(f"[WARN ] gui.py not found at {gui_path}")
+        return
+
+    gui_env = os.environ.copy()
+    has_display = bool(gui_env.get("DISPLAY") or gui_env.get("WAYLAND_DISPLAY"))
+
+    if not has_display and os.path.exists("/tmp/.X11-unix/X0"):
+        gui_env["DISPLAY"] = ":0"
+        xauth_path = os.path.expanduser("~/.Xauthority")
+        if os.path.exists(xauth_path):
+            gui_env.setdefault("XAUTHORITY", xauth_path)
+        has_display = True
+
+    if not has_display:
+        msg = "No active display detected. GUI not started (set DISPLAY/WAYLAND_DISPLAY first)."
+        logging.warning(msg)
+        print(f"[WARN ] {msg}")
+        return
+
+    try:
+        gui_process = subprocess.Popen([sys.executable, gui_path], env=gui_env)
+        logging.info(f"GUI started (PID: {gui_process.pid})")
+        print(f"[INFO ] GUI started (PID: {gui_process.pid})")
+    except Exception as e:
+        logging.error(f"Failed to start GUI: {e}")
+        print(f"[ERROR] Failed to start GUI: {e}")
+
+def stop_gui_process():
+    global gui_process
+    if gui_process is None:
+        return
+    if gui_process.poll() is not None:
+        gui_process = None
+        return
+
+    try:
+        gui_process.terminate()
+        gui_process.wait(timeout=3)
+        logging.info("GUI process terminated")
+        print("[INFO ] GUI process terminated")
+    except Exception:
+        try:
+            gui_process.kill()
+            logging.warning("GUI process killed")
+            print("[WARN ] GUI process killed")
+        except Exception as e:
+            logging.error(f"Failed to stop GUI process: {e}")
+            print(f"[ERROR] Failed to stop GUI process: {e}")
+    finally:
+        gui_process = None
+
+def _write_gui_data(payload: dict):
+    tmp_path = f"{GUI_DATA_FILE}.tmp"
+    with open(tmp_path, "w") as f:
+        json.dump(payload, f)
+    os.replace(tmp_path, GUI_DATA_FILE)
+
+def build_gui_payload() -> dict:
+    with adc_lock:
+        oil_temp = adc_registers[0] / 100.0
+        oil_press = adc_registers[1] / 10000.0
+
+    bus_u_temp = round(random.uniform(40.0, 65.0), 1)
+    bus_v_temp = round(random.uniform(40.0, 65.0), 1)
+    bus_w_temp = round(random.uniform(40.0, 65.0), 1)
+    wit_u_temp = round(random.uniform(45.0, 80.0), 1)
+    wit_v_temp = round(random.uniform(45.0, 80.0), 1)
+    wit_w_temp = round(random.uniform(45.0, 80.0), 1)
+
+    u_n = round(random.uniform(215.0, 235.0), 1)
+    v_n = round(random.uniform(215.0, 235.0), 1)
+    w_n = round(random.uniform(215.0, 235.0), 1)
+
+    u_v = round(u_n + v_n, 1)
+    v_w = round(v_n + w_n, 1)
+    u_w = round(u_n + w_n, 1)
+
+    i_u = round(random.uniform(10.0, 50.0), 2)
+    i_v = round(random.uniform(10.0, 50.0), 2)
+    i_w = round(random.uniform(10.0, 50.0), 2)
+    i_avg = round((i_u + i_v + i_w) / 3.0, 2)
+
+    values = {
+        "Oil Level": round(random.uniform(20.0, 100.0), 1),
+        "Oil Temperature": round(oil_temp, 2),
+        "Oil Pressure": round(oil_press, 3),
+        "Bus U Temperature": bus_u_temp,
+        "Bus V Temperature": bus_v_temp,
+        "Bus W Temperature": bus_w_temp,
+        "WIT U Temperature": wit_u_temp,
+        "WIT V Temperature": wit_v_temp,
+        "WIT W Temperature": wit_w_temp,
+        "U-N Phase Voltage": u_n,
+        "V-N Phase Voltage": v_n,
+        "W-N Phase Voltage": w_n,
+        "U-V Phase Voltage": u_v,
+        "V-W Phase Voltage": v_w,
+        "U-W Phase Voltage": u_w,
+        "U Phase Current": i_u,
+        "V Phase Current": i_v,
+        "W Phase Current": i_w,
+        "Average Current": i_avg,
+    }
+
+    return {
+        "updated_at": time.time(),
+        "values": values,
+    }
+
+def gui_data_publisher():
+    while True:
+        try:
+            payload = build_gui_payload()
+            _write_gui_data(payload)
+        except Exception as e:
+            logging.error(f"GUI data publisher error: {e}")
+            print(f"[ERROR] GUI data publisher error: {e}")
+        time.sleep(0.5)
+
 def main():
-    # logging.info("=== TMU Modbus Gateway ===")
+    logging.info("\n\n\n")
+    logging.info("=== TMU Modbus Gateway ===")
     print("=== TMU Modbus Gateway ===")
     host, serial_cfg, port_slave_map = load_config("config.json")
+
+    threading.Thread(target=gui_data_publisher, daemon=True).start()
+    start_gui_process()
     bus = SerialBus(serial_cfg)
     
     adc_handler_started = False
     initOled()
     
-    formatTeks = "\n       ".join([f"{k} -> {v}" for k, v in global_port_map.items()])
-    tampilkan(f"""\
+    textFormat = "\n       ".join([f"{k} -> {v}" for k, v in global_port_map.items()])
+    showOled(f"""\
 	 TMU MODBUS GATEWAY 
 	IP   : 192.168.4.200
-	PORT : {formatTeks}
+	PORT : {textFormat}
 	""")
 
     for port, target in port_slave_map.items():
@@ -312,21 +481,25 @@ def main():
             if not adc_handler_started:
                 threading.Thread(target=adc_handler, daemon=True).start()
             threading.Thread(target=start_adc_listener, args=(host, port), daemon=True).start()
+            logging.info(f"Ready listening on Port {port} for ADC")
             print(f"[INFO ] Ready listening on Port {port} for ADC")
         else:
             try:
                 slave_id = int(target)
                 threading.Thread(target=start_listener, args=(host, port, slave_id, bus), daemon=True).start()
-                # logging.info(f"Ready listening on Port {port} for Slave ID {slave_id}")
+                logging.info(f"Ready listening on Port {port} for Slave ID {slave_id}")
                 print(f"[INFO ] Ready listening on Port {port} for Slave ID {slave_id}")
             except ValueError:
+                logging.error(f"Invalid target '{target}' for port {port}. Must be 'ADC' or integer Slave ID")
                 print(f"[ERROR] Invalid target '{target}' for port {port}. Must be 'ADC' or integer SLave ID")
 
     try:
         threading.Event().wait()
     except KeyboardInterrupt:
-        # logging.info("Gateway Stopped.")
-        print(f"[INFO ] Gateway Stopped.")
+        logging.info("Gateway Stopped.")
+        print(f"[INFO ] Gateway Stopped.\n\n")
+    finally:
+        stop_gui_process()
 
 if __name__ == "__main__":
     main()
