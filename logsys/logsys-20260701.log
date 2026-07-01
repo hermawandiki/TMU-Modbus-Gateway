@@ -11,3 +11,1738 @@
 2026-07-01 08:26:51,077 | INFO: Ready listening on Port 5020 for Slave ID 10
 2026-07-01 08:26:51,078 | INFO: Ready listening on Port 5030 for Slave ID 2
 2026-07-01 08:27:09,261 | INFO: Gateway Stopped.
+2026-07-01 08:40:35,639 | INFO: 
+
+
+
+2026-07-01 08:40:35,640 | INFO: === TMU Modbus Gateway ===
+2026-07-01 08:40:35,641 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 08:40:35,642 | INFO: Config loaded with OK
+2026-07-01 08:40:35,645 | INFO: GUI started (PID: 4632)
+2026-07-01 08:40:35,646 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 08:40:35,828 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 08:40:35,829 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 08:40:35,830 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 08:40:47,426 | INFO: Gateway Stopped.
+2026-07-01 08:47:22,764 | INFO: 
+
+
+
+2026-07-01 08:47:22,765 | INFO: === TMU Modbus Gateway ===
+2026-07-01 08:47:22,766 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 08:47:22,767 | INFO: Config loaded with OK
+2026-07-01 08:47:22,769 | INFO: GUI started (PID: 5305)
+2026-07-01 08:47:22,771 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 08:47:22,953 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 08:47:22,954 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 08:47:22,955 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 08:56:03,353 | INFO: Gateway Stopped.
+2026-07-01 08:59:09,761 | INFO: 
+
+
+
+2026-07-01 08:59:09,762 | INFO: === TMU Modbus Gateway ===
+2026-07-01 08:59:09,762 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 08:59:09,763 | INFO: Config loaded with OK
+2026-07-01 08:59:09,765 | INFO: GUI started (PID: 7509)
+2026-07-01 08:59:09,771 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 08:59:09,941 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 08:59:09,942 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 08:59:09,944 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:04:59,868 | INFO: Gateway Stopped.
+2026-07-01 09:05:00,991 | INFO: 
+
+
+
+2026-07-01 09:05:00,991 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:05:00,992 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:05:00,993 | INFO: Config loaded with OK
+2026-07-01 09:05:00,996 | INFO: GUI started (PID: 8589)
+2026-07-01 09:05:00,997 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:05:01,195 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:05:01,198 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:05:01,199 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:05:21,294 | INFO: Gateway Stopped.
+2026-07-01 09:05:22,320 | INFO: 
+
+
+
+2026-07-01 09:05:22,320 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:05:22,321 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:05:22,322 | INFO: Config loaded with OK
+2026-07-01 09:05:22,325 | INFO: GUI started (PID: 8714)
+2026-07-01 09:05:22,327 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:05:22,496 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:05:22,497 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:05:22,498 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:05:25,137 | INFO: Gateway Stopped.
+2026-07-01 09:05:37,545 | INFO: 
+
+
+
+2026-07-01 09:05:37,546 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:05:37,547 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:05:37,548 | INFO: Config loaded with OK
+2026-07-01 09:05:37,551 | INFO: GUI started (PID: 8799)
+2026-07-01 09:05:37,553 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:05:37,730 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:05:37,731 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:05:37,732 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:05:50,733 | INFO: Gateway Stopped.
+2026-07-01 09:06:31,993 | INFO: 
+
+
+
+2026-07-01 09:06:31,993 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:06:31,994 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:06:31,994 | INFO: Config loaded with OK
+2026-07-01 09:06:31,997 | INFO: GUI started (PID: 9058)
+2026-07-01 09:06:32,001 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:06:32,163 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:06:32,165 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:06:32,166 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:06:43,125 | INFO: Gateway Stopped.
+2026-07-01 09:06:43,142 | INFO: GUI process terminated
+2026-07-01 09:07:10,269 | INFO: 
+
+
+
+2026-07-01 09:07:10,269 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:07:10,270 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:07:10,271 | INFO: Config loaded with OK
+2026-07-01 09:07:10,273 | INFO: GUI started (PID: 9214)
+2026-07-01 09:07:10,274 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:07:10,445 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:07:10,446 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:07:10,448 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:07:16,080 | INFO: Gateway Stopped.
+2026-07-01 09:07:16,097 | INFO: GUI process terminated
+2026-07-01 09:07:41,262 | INFO: 
+
+
+
+2026-07-01 09:07:41,262 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:07:41,262 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:07:41,263 | INFO: Config loaded with OK
+2026-07-01 09:07:41,268 | INFO: GUI started (PID: 9350)
+2026-07-01 09:07:41,271 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:07:41,437 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:07:41,438 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:07:41,439 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:07:44,987 | INFO: Gateway Stopped.
+2026-07-01 09:07:45,004 | INFO: GUI process terminated
+2026-07-01 09:08:58,127 | INFO: 
+
+
+
+2026-07-01 09:08:58,128 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:08:58,129 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:08:58,132 | INFO: Config loaded with OK
+2026-07-01 09:08:58,144 | INFO: GUI started (PID: 9551)
+2026-07-01 09:08:58,156 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:08:58,399 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:08:58,407 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:08:58,409 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:09:00,943 | INFO: Gateway Stopped.
+2026-07-01 09:09:00,959 | INFO: GUI process terminated
+2026-07-01 09:09:12,203 | INFO: 
+
+
+
+2026-07-01 09:09:12,203 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:09:12,204 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:09:12,205 | INFO: Config loaded with OK
+2026-07-01 09:09:12,209 | INFO: GUI started (PID: 9647)
+2026-07-01 09:09:12,211 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:09:12,385 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:09:12,387 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:09:12,389 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:09:14,077 | INFO: Gateway Stopped.
+2026-07-01 09:09:14,094 | INFO: GUI process terminated
+2026-07-01 09:10:13,870 | INFO: 
+
+
+
+2026-07-01 09:10:13,871 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:10:13,871 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:10:13,872 | INFO: Config loaded with OK
+2026-07-01 09:10:13,874 | INFO: GUI started (PID: 9798)
+2026-07-01 09:10:13,876 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:10:14,041 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:10:14,042 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:10:14,044 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:10:29,087 | INFO: Gateway Stopped.
+2026-07-01 09:10:29,104 | INFO: GUI process terminated
+2026-07-01 09:10:31,771 | INFO: 
+
+
+
+2026-07-01 09:10:31,771 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:10:31,772 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:10:31,772 | INFO: Config loaded with OK
+2026-07-01 09:10:31,775 | INFO: GUI started (PID: 9920)
+2026-07-01 09:10:31,776 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:10:31,949 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:10:31,950 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:10:31,951 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:11:02,236 | INFO: Gateway Stopped.
+2026-07-01 09:11:03,215 | INFO: 
+
+
+
+2026-07-01 09:11:03,215 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:11:03,216 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:11:03,216 | INFO: Config loaded with OK
+2026-07-01 09:11:03,220 | INFO: GUI started (PID: 10061)
+2026-07-01 09:11:03,223 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:11:03,395 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:11:03,396 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:11:03,397 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:11:11,193 | INFO: Gateway Stopped.
+2026-07-01 09:11:11,210 | INFO: GUI process terminated
+2026-07-01 09:11:18,201 | INFO: 
+
+
+
+2026-07-01 09:11:18,201 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:11:18,202 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:11:18,203 | INFO: Config loaded with OK
+2026-07-01 09:11:18,205 | INFO: GUI started (PID: 10187)
+2026-07-01 09:11:18,207 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:11:18,379 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:11:18,381 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:11:18,383 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:11:25,197 | INFO: Gateway Stopped.
+2026-07-01 09:11:25,218 | INFO: GUI process terminated
+2026-07-01 09:11:38,370 | INFO: 
+
+
+
+2026-07-01 09:11:38,370 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:11:38,370 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:11:38,371 | INFO: Config loaded with OK
+2026-07-01 09:11:38,374 | INFO: GUI started (PID: 10325)
+2026-07-01 09:11:38,375 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:11:38,539 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:11:38,541 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:11:38,542 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:13:05,906 | INFO: Gateway Stopped.
+2026-07-01 09:13:07,691 | INFO: 
+
+
+
+2026-07-01 09:13:07,691 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:13:07,692 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:13:07,693 | INFO: Config loaded with OK
+2026-07-01 09:13:07,696 | INFO: GUI started (PID: 10652)
+2026-07-01 09:13:07,698 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:13:07,863 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:13:07,865 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:13:07,866 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:13:15,868 | INFO: Gateway Stopped.
+2026-07-01 09:13:15,886 | INFO: GUI process terminated
+2026-07-01 09:13:17,601 | INFO: 
+
+
+
+2026-07-01 09:13:17,601 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:13:17,601 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:13:17,602 | INFO: Config loaded with OK
+2026-07-01 09:13:17,605 | INFO: GUI started (PID: 10736)
+2026-07-01 09:13:17,607 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:13:17,777 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:13:17,779 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:13:17,780 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:15:37,276 | INFO: Gateway Stopped.
+2026-07-01 09:15:46,144 | INFO: 
+
+
+
+2026-07-01 09:15:46,146 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:15:46,148 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:15:46,150 | INFO: Config loaded with OK
+2026-07-01 09:15:46,154 | INFO: GUI started (PID: 11235)
+2026-07-01 09:15:46,157 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:15:46,341 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:15:46,343 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:15:46,345 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:16:33,137 | INFO: Gateway Stopped.
+2026-07-01 09:17:50,797 | INFO: 
+
+
+
+2026-07-01 09:17:50,797 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:17:50,798 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:17:50,799 | INFO: Config loaded with OK
+2026-07-01 09:17:50,801 | INFO: GUI started (PID: 11573)
+2026-07-01 09:17:50,803 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:17:50,973 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:17:50,975 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:17:50,976 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:17:53,979 | INFO: Gateway Stopped.
+2026-07-01 09:18:34,220 | INFO: 
+
+
+
+2026-07-01 09:18:34,221 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:18:34,221 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:18:34,222 | INFO: Config loaded with OK
+2026-07-01 09:18:34,225 | INFO: GUI started (PID: 11702)
+2026-07-01 09:18:34,226 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:18:34,396 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:18:34,397 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:18:34,398 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:19:21,109 | INFO: Gateway Stopped.
+2026-07-01 09:19:22,911 | INFO: 
+
+
+
+2026-07-01 09:19:22,911 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:19:22,911 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:19:22,912 | INFO: Config loaded with OK
+2026-07-01 09:19:22,915 | INFO: GUI started (PID: 11901)
+2026-07-01 09:19:22,917 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:19:23,087 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:19:23,088 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:19:23,089 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:22:38,241 | INFO: Gateway Stopped.
+2026-07-01 09:25:27,041 | INFO: 
+
+
+
+2026-07-01 09:25:27,042 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:25:27,043 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:25:27,044 | INFO: Config loaded with OK
+2026-07-01 09:25:27,046 | INFO: GUI started (PID: 13501)
+2026-07-01 09:25:27,048 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:25:27,225 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:25:27,226 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:25:27,227 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:35:24,206 | INFO: Gateway Stopped.
+2026-07-01 09:35:24,228 | INFO: GUI process terminated
+2026-07-01 09:35:25,655 | INFO: 
+
+
+
+2026-07-01 09:35:25,655 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:35:25,656 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:35:25,657 | INFO: Config loaded with OK
+2026-07-01 09:35:25,658 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:35:25,827 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:35:25,828 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:35:25,829 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:35:25,831 | INFO: GUI started (PID: 15418)
+2026-07-01 09:35:47,498 | INFO: Gateway Stopped.
+2026-07-01 09:37:06,453 | INFO: 
+
+
+
+2026-07-01 09:37:06,454 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:37:06,454 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:37:06,455 | INFO: Config loaded with OK
+2026-07-01 09:37:06,456 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:37:06,612 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:37:06,614 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:37:06,615 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:37:06,617 | INFO: GUI started (PID: 15681)
+2026-07-01 09:37:47,353 | INFO: Connected to ADC on port 5040 from 192.168.4.103:56607
+2026-07-01 09:37:48,370 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:56608
+2026-07-01 09:37:50,812 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:56609
+2026-07-01 09:38:33,981 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:34,987 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:36,039 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:37,043 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:38,090 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:39,138 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:40,188 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:41,236 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:58,376 | ERROR: Slave ID 10 No Response
+2026-07-01 09:38:59,512 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:00,581 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:01,632 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:24,245 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:25,351 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:26,451 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:27,454 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:28,558 | ERROR: Slave ID 2 No Response
+2026-07-01 09:39:29,560 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:30,661 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:34,499 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:35,605 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:36,710 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:37,713 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:38,818 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:39,819 | ERROR: Slave ID 2 No Response
+2026-07-01 09:39:40,823 | ERROR: Slave ID 2 No Response
+2026-07-01 09:39:41,922 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:43,026 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:44,125 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:45,225 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:46,230 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:47,335 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:48,336 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:49,339 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:50,390 | ERROR: Slave ID 2 No Response
+2026-07-01 09:39:51,392 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:52,497 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:53,599 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:54,649 | ERROR: Slave ID 2 No Response
+2026-07-01 09:39:55,652 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:56,812 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:57,919 | ERROR: Slave ID 10 No Response
+2026-07-01 09:39:59,024 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:00,027 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:01,128 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:03,177 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:04,279 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:05,381 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:06,483 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:07,486 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:08,590 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:09,691 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:10,746 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:11,747 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:12,749 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:13,858 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:14,862 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:15,912 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:16,915 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:17,963 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:18,967 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:20,017 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:21,022 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:22,074 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:23,075 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:24,077 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:25,079 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:26,131 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:27,136 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:28,188 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:29,193 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:30,243 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:31,248 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:32,296 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:33,300 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:34,349 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:35,353 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:36,403 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:37,408 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:38,411 | ERROR: Slave ID 2 No Response
+2026-07-01 09:40:39,413 | ERROR: Slave ID 10 No Response
+2026-07-01 09:40:40,569 | ERROR: Unexpected error: [Errno 32] Broken pipe
+2026-07-01 09:40:40,569 | INFO: Disconnected Port 5020 from 192.168.4.103:56608
+2026-07-01 09:41:46,289 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:59468
+2026-07-01 09:41:51,771 | ERROR: Slave ID 10 No Response
+2026-07-01 09:41:52,875 | ERROR: Slave ID 10 No Response
+2026-07-01 09:41:53,981 | ERROR: Slave ID 10 No Response
+2026-07-01 09:41:54,985 | ERROR: Slave ID 10 No Response
+2026-07-01 09:41:56,143 | ERROR: Slave ID 10 No Response
+2026-07-01 09:41:57,247 | ERROR: Slave ID 10 No Response
+2026-07-01 09:42:53,677 | ERROR: Slave ID 2 No Response
+2026-07-01 09:43:28,314 | ERROR: Slave ID 10 No Response
+2026-07-01 09:44:03,358 | INFO: Gateway Stopped.
+2026-07-01 09:44:03,379 | INFO: GUI process terminated
+2026-07-01 09:46:21,386 | INFO: 
+
+
+
+2026-07-01 09:46:21,387 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:46:21,387 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:46:21,388 | INFO: Config loaded with OK
+2026-07-01 09:46:21,389 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:46:21,545 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:46:21,546 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:46:21,547 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:46:21,549 | INFO: GUI started (PID: 17727)
+2026-07-01 09:46:29,857 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:50698
+2026-07-01 09:46:32,971 | INFO: Disconnected Port 5020 from 192.168.4.103:50698
+2026-07-01 09:48:54,194 | INFO: Gateway Stopped.
+2026-07-01 09:48:54,211 | INFO: GUI process terminated
+2026-07-01 09:48:56,092 | INFO: 
+
+
+
+2026-07-01 09:48:56,092 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:48:56,093 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:48:56,093 | INFO: Config loaded with OK
+2026-07-01 09:48:56,094 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:48:56,248 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:48:56,249 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:48:56,250 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:48:56,252 | INFO: GUI started (PID: 18331)
+2026-07-01 09:49:56,277 | INFO: Gateway Stopped.
+2026-07-01 09:49:57,218 | INFO: 
+
+
+
+2026-07-01 09:49:57,218 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:49:57,219 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:49:57,219 | INFO: Config loaded with OK
+2026-07-01 09:49:57,221 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:49:57,376 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:49:57,377 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:49:57,377 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:49:57,379 | INFO: GUI started (PID: 18550)
+2026-07-01 09:57:58,834 | INFO: Gateway Stopped.
+2026-07-01 09:58:10,030 | INFO: 
+
+
+
+2026-07-01 09:58:10,030 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:58:10,031 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:58:10,032 | INFO: Config loaded with OK
+2026-07-01 09:58:10,033 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:58:10,191 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:58:10,192 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:58:10,193 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:58:10,197 | INFO: GUI started (PID: 20073)
+2026-07-01 09:58:33,494 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:57554
+2026-07-01 09:58:47,593 | INFO: Disconnected Port 5030 from 192.168.4.103:57554
+2026-07-01 09:58:53,281 | INFO: Gateway Stopped.
+2026-07-01 09:58:53,299 | INFO: GUI process terminated
+2026-07-01 09:59:18,401 | INFO: 
+
+
+
+2026-07-01 09:59:18,402 | INFO: === TMU Modbus Gateway ===
+2026-07-01 09:59:18,402 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 09:59:18,403 | INFO: Config loaded with OK
+2026-07-01 09:59:18,404 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 09:59:18,556 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 09:59:18,558 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 09:59:18,559 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 09:59:18,560 | INFO: GUI started (PID: 20366)
+2026-07-01 10:02:50,613 | INFO: Gateway Stopped.
+2026-07-01 10:02:51,720 | INFO: 
+
+
+
+2026-07-01 10:02:51,720 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:02:51,720 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:02:51,721 | INFO: Config loaded with OK
+2026-07-01 10:02:51,722 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:02:51,883 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:02:51,884 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:02:51,885 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:02:51,888 | INFO: GUI started (PID: 21072)
+2026-07-01 10:06:54,414 | INFO: Gateway Stopped.
+2026-07-01 10:06:56,018 | INFO: 
+
+
+
+2026-07-01 10:06:56,019 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:06:56,019 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:06:56,020 | INFO: Config loaded with OK
+2026-07-01 10:06:56,021 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:06:56,177 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:06:56,178 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:06:56,179 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:06:56,181 | INFO: GUI started (PID: 21879)
+2026-07-01 10:09:55,850 | INFO: Gateway Stopped.
+2026-07-01 10:09:56,779 | INFO: 
+
+
+
+2026-07-01 10:09:56,779 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:09:56,780 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:09:56,781 | INFO: Config loaded with OK
+2026-07-01 10:09:56,781 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:09:56,937 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:09:56,938 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:09:56,939 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:09:56,940 | INFO: GUI started (PID: 22482)
+2026-07-01 10:10:59,201 | INFO: Gateway Stopped.
+2026-07-01 10:11:00,354 | INFO: 
+
+
+
+2026-07-01 10:11:00,355 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:11:00,356 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:11:00,357 | INFO: Config loaded with OK
+2026-07-01 10:11:00,359 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:11:00,535 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:11:00,536 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:11:00,538 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:11:00,540 | INFO: GUI started (PID: 22722)
+2026-07-01 10:11:38,274 | INFO: Gateway Stopped.
+2026-07-01 10:11:39,104 | INFO: 
+
+
+
+2026-07-01 10:11:39,104 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:11:39,104 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:11:39,105 | INFO: Config loaded with OK
+2026-07-01 10:11:39,106 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:11:39,262 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:11:39,263 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:11:39,264 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:11:39,266 | INFO: GUI started (PID: 22896)
+2026-07-01 10:12:44,619 | INFO: 
+
+
+
+2026-07-01 10:12:44,619 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:12:44,619 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:12:44,620 | INFO: Config loaded with OK
+2026-07-01 10:12:44,621 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:12:44,776 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:12:44,777 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:12:44,778 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:12:44,780 | INFO: GUI started (PID: 23154)
+2026-07-01 10:15:44,329 | INFO: 
+
+
+
+2026-07-01 10:15:44,332 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:15:44,333 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:15:44,378 | INFO: Config loaded with OK
+2026-07-01 10:15:44,380 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:15:44,742 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:15:44,744 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:15:44,745 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:15:44,746 | INFO: GUI started (PID: 2899)
+2026-07-01 10:16:37,380 | INFO: Gateway Stopped.
+2026-07-01 10:16:38,738 | INFO: 
+
+
+
+2026-07-01 10:16:38,739 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:16:38,739 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:16:38,741 | INFO: Config loaded with OK
+2026-07-01 10:16:38,742 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:16:38,916 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:16:38,918 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:16:38,918 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:16:38,920 | INFO: GUI started (PID: 3086)
+2026-07-01 10:17:33,467 | INFO: Gateway Stopped.
+2026-07-01 10:17:33,484 | INFO: GUI process terminated
+2026-07-01 10:17:34,763 | INFO: 
+
+
+
+2026-07-01 10:17:34,763 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:17:34,763 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:17:34,764 | INFO: Config loaded with OK
+2026-07-01 10:17:34,765 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:17:34,918 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:17:34,920 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:17:34,920 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:17:34,922 | INFO: GUI started (PID: 3240)
+2026-07-01 10:19:22,581 | INFO: Gateway Stopped.
+2026-07-01 10:19:31,552 | INFO: 
+
+
+
+2026-07-01 10:19:31,553 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:19:31,553 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:19:31,553 | INFO: Config loaded with OK
+2026-07-01 10:19:31,554 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:19:31,723 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:19:31,725 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:19:31,726 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:19:31,728 | INFO: GUI started (PID: 3513)
+2026-07-01 10:20:29,241 | INFO: Gateway Stopped.
+2026-07-01 10:27:58,268 | INFO: 
+
+
+
+2026-07-01 10:27:58,269 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:27:58,269 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:27:58,270 | INFO: Config loaded with OK
+2026-07-01 10:27:58,271 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:27:58,428 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:27:58,429 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:27:58,430 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:27:58,431 | INFO: GUI started (PID: 4897)
+2026-07-01 10:28:23,943 | INFO: Gateway Stopped.
+2026-07-01 10:28:25,052 | INFO: 
+
+
+
+2026-07-01 10:28:25,052 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:28:25,052 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:28:25,053 | INFO: Config loaded with OK
+2026-07-01 10:28:25,054 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:28:25,216 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:28:25,218 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:28:25,220 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:28:25,223 | INFO: GUI started (PID: 5035)
+2026-07-01 10:36:30,524 | INFO: 
+
+
+
+2026-07-01 10:36:30,525 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:36:30,525 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:36:30,526 | INFO: Config loaded with OK
+2026-07-01 10:36:30,527 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:36:30,683 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:36:30,685 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:36:30,685 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:36:30,687 | INFO: GUI started (PID: 6756)
+2026-07-01 10:36:47,321 | INFO: Gateway Stopped.
+2026-07-01 10:44:07,228 | INFO: 
+
+
+
+2026-07-01 10:44:07,229 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:44:07,229 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:44:07,230 | INFO: Config loaded with OK
+2026-07-01 10:44:07,231 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:44:19,199 | INFO: 
+
+
+
+2026-07-01 10:44:19,200 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:44:19,200 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:44:19,200 | INFO: Config loaded with OK
+2026-07-01 10:44:19,201 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:44:33,779 | INFO: 
+
+
+
+2026-07-01 10:44:33,779 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:44:33,780 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:44:33,781 | INFO: Config loaded with OK
+2026-07-01 10:44:33,782 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:45:03,096 | INFO: 
+
+
+
+2026-07-01 10:45:03,096 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:45:03,096 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:45:03,097 | INFO: Config loaded with OK
+2026-07-01 10:45:03,098 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:45:03,264 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:45:03,265 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:45:03,266 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:45:03,267 | INFO: GUI started (PID: 7861)
+2026-07-01 10:45:50,875 | INFO: Gateway Stopped.
+2026-07-01 10:45:52,548 | INFO: 
+
+
+
+2026-07-01 10:45:52,549 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:45:52,549 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:45:52,550 | INFO: Config loaded with OK
+2026-07-01 10:45:52,551 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:45:52,705 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:45:52,706 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:45:52,707 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:45:52,708 | INFO: GUI started (PID: 8082)
+2026-07-01 10:46:06,694 | INFO: Gateway Stopped.
+2026-07-01 10:46:07,796 | INFO: 
+
+
+
+2026-07-01 10:46:07,796 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:46:07,797 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:46:07,797 | INFO: Config loaded with OK
+2026-07-01 10:46:07,798 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:46:07,964 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:46:07,966 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:46:07,967 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:46:07,969 | INFO: GUI started (PID: 8187)
+2026-07-01 10:46:27,902 | INFO: Gateway Stopped.
+2026-07-01 10:49:27,606 | INFO: 
+
+
+
+2026-07-01 10:49:27,606 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:49:27,606 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:49:27,607 | INFO: Config loaded with OK
+2026-07-01 10:49:27,608 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:49:43,044 | INFO: 
+
+
+
+2026-07-01 10:49:43,044 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:49:43,045 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:49:43,045 | INFO: Config loaded with OK
+2026-07-01 10:49:43,047 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:49:43,203 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:49:43,204 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:49:43,205 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:49:43,207 | INFO: GUI started (PID: 8798)
+2026-07-01 10:49:45,762 | INFO: Gateway Stopped.
+2026-07-01 10:49:45,779 | INFO: GUI process terminated
+2026-07-01 10:56:35,133 | INFO: 
+
+
+
+2026-07-01 10:56:35,133 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:56:35,133 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:56:35,134 | INFO: Config loaded with OK
+2026-07-01 10:56:35,135 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:56:35,295 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:56:35,296 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:56:35,297 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:56:35,298 | INFO: GUI started (PID: 9881)
+2026-07-01 10:59:17,606 | INFO: Gateway Stopped.
+2026-07-01 10:59:19,665 | INFO: 
+
+
+
+2026-07-01 10:59:19,666 | INFO: === TMU Modbus Gateway ===
+2026-07-01 10:59:19,666 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 10:59:19,667 | INFO: Config loaded with OK
+2026-07-01 10:59:19,668 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 10:59:19,833 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 10:59:19,834 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 10:59:19,835 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 10:59:19,837 | INFO: GUI started (PID: 10445)
+2026-07-01 11:00:37,962 | INFO: Gateway Stopped.
+2026-07-01 11:00:39,096 | INFO: 
+
+
+
+2026-07-01 11:00:39,098 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:00:39,098 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:00:39,099 | INFO: Config loaded with OK
+2026-07-01 11:00:39,101 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:00:39,311 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:00:39,314 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:00:39,316 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:00:39,320 | INFO: GUI started (PID: 10753)
+2026-07-01 11:15:26,475 | INFO: Gateway Stopped.
+2026-07-01 11:15:26,487 | INFO: GUI process terminated
+2026-07-01 11:15:27,462 | INFO: 
+
+
+
+2026-07-01 11:15:27,462 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:15:27,462 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:15:27,463 | INFO: Config loaded with OK
+2026-07-01 11:15:27,464 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:15:27,635 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:15:27,636 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:15:27,637 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:15:27,639 | INFO: GUI started (PID: 13686)
+2026-07-01 11:17:03,626 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:64795
+2026-07-01 11:17:10,087 | INFO: Disconnected Port 5030 from 192.168.4.103:64795
+2026-07-01 11:17:17,754 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:64797
+2026-07-01 11:17:58,053 | INFO: Gateway Stopped.
+2026-07-01 11:17:59,661 | INFO: 
+
+
+
+2026-07-01 11:17:59,662 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:17:59,662 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:17:59,662 | INFO: Config loaded with OK
+2026-07-01 11:17:59,663 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:17:59,833 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:17:59,834 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:17:59,835 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:17:59,836 | INFO: GUI started (PID: 14251)
+2026-07-01 11:19:34,847 | INFO: Gateway Stopped.
+2026-07-01 11:19:35,756 | INFO: 
+
+
+
+2026-07-01 11:19:35,756 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:19:35,757 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:19:35,757 | INFO: Config loaded with OK
+2026-07-01 11:19:35,758 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:19:35,914 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:19:35,915 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:19:35,916 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:19:35,917 | INFO: GUI started (PID: 14588)
+2026-07-01 11:21:27,237 | INFO: Gateway Stopped.
+2026-07-01 11:21:28,284 | INFO: 
+
+
+
+2026-07-01 11:21:28,284 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:21:28,284 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:21:28,285 | INFO: Config loaded with OK
+2026-07-01 11:21:28,286 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:21:28,452 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:21:28,453 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:21:28,454 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:21:28,457 | INFO: GUI started (PID: 14999)
+2026-07-01 11:22:00,492 | INFO: Gateway Stopped.
+2026-07-01 11:22:00,508 | INFO: GUI process terminated
+2026-07-01 11:22:01,561 | INFO: 
+
+
+
+2026-07-01 11:22:01,562 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:22:01,562 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:22:01,562 | INFO: Config loaded with OK
+2026-07-01 11:22:01,563 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:22:01,723 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:22:01,724 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:22:01,726 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:22:01,728 | INFO: GUI started (PID: 15144)
+2026-07-01 11:22:15,979 | INFO: Gateway Stopped.
+2026-07-01 11:22:15,996 | INFO: GUI process terminated
+2026-07-01 11:22:17,626 | INFO: 
+
+
+
+2026-07-01 11:22:17,626 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:22:17,627 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:22:17,627 | INFO: Config loaded with OK
+2026-07-01 11:22:17,628 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:22:17,795 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:22:17,796 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:22:17,797 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:22:17,799 | INFO: GUI started (PID: 15252)
+2026-07-01 11:23:05,341 | INFO: Gateway Stopped.
+2026-07-01 11:23:05,363 | INFO: GUI process terminated
+2026-07-01 11:23:06,793 | INFO: 
+
+
+
+2026-07-01 11:23:06,794 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:23:06,794 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:23:06,794 | INFO: Config loaded with OK
+2026-07-01 11:23:06,795 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:23:06,964 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:23:06,965 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:23:06,966 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:23:06,968 | INFO: GUI started (PID: 15467)
+2026-07-01 11:23:29,396 | INFO: Gateway Stopped.
+2026-07-01 11:23:29,414 | INFO: GUI process terminated
+2026-07-01 11:23:34,557 | INFO: 
+
+
+
+2026-07-01 11:23:34,557 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:23:34,557 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:23:34,558 | INFO: Config loaded with OK
+2026-07-01 11:23:34,559 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:23:34,721 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:23:34,722 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:23:34,723 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:23:34,724 | INFO: GUI started (PID: 15677)
+2026-07-01 11:25:21,505 | INFO: Gateway Stopped.
+2026-07-01 11:26:46,967 | INFO: 
+
+
+
+2026-07-01 11:26:46,967 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:26:46,968 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:26:46,968 | INFO: Config loaded with OK
+2026-07-01 11:26:46,969 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:26:47,130 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:26:47,132 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:26:47,133 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:26:47,135 | INFO: GUI started (PID: 16599)
+2026-07-01 11:27:17,849 | INFO: Gateway Stopped.
+2026-07-01 11:27:18,883 | INFO: 
+
+
+
+2026-07-01 11:27:18,883 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:27:18,883 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:27:18,884 | INFO: Config loaded with OK
+2026-07-01 11:27:18,885 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:27:19,049 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:27:19,050 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:27:19,051 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:27:19,053 | INFO: GUI started (PID: 16741)
+2026-07-01 11:28:25,502 | INFO: Gateway Stopped.
+2026-07-01 11:28:25,521 | INFO: GUI process terminated
+2026-07-01 11:28:26,872 | INFO: 
+
+
+
+2026-07-01 11:28:26,872 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:28:26,873 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:28:26,875 | INFO: Config loaded with OK
+2026-07-01 11:28:26,876 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:28:27,105 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:28:27,106 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:28:27,107 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:28:27,109 | INFO: GUI started (PID: 17007)
+2026-07-01 11:28:53,173 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:61269
+2026-07-01 11:29:00,052 | INFO: Disconnected Port 5020 from 192.168.4.103:61269
+2026-07-01 11:30:36,160 | INFO: Gateway Stopped.
+2026-07-01 11:30:36,177 | INFO: GUI process terminated
+2026-07-01 11:30:37,222 | INFO: 
+
+
+
+2026-07-01 11:30:37,222 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:30:37,222 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:30:37,223 | INFO: Config loaded with OK
+2026-07-01 11:30:37,224 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:30:37,384 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:30:37,385 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:30:37,386 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:30:37,387 | INFO: GUI started (PID: 17508)
+2026-07-01 11:31:39,080 | INFO: Gateway Stopped.
+2026-07-01 11:31:39,098 | INFO: GUI process terminated
+2026-07-01 11:31:40,359 | INFO: 
+
+
+
+2026-07-01 11:31:40,360 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:31:40,360 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:31:40,361 | INFO: Config loaded with OK
+2026-07-01 11:31:40,362 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:31:40,544 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:31:40,545 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:31:40,546 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:31:40,547 | INFO: GUI started (PID: 17757)
+2026-07-01 11:32:26,552 | INFO: Gateway Stopped.
+2026-07-01 11:32:26,569 | INFO: GUI process terminated
+2026-07-01 11:32:27,548 | INFO: 
+
+
+
+2026-07-01 11:32:27,549 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:32:27,549 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:32:27,550 | INFO: Config loaded with OK
+2026-07-01 11:32:27,551 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:32:27,715 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:32:27,716 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:32:27,717 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:32:27,718 | INFO: GUI started (PID: 17960)
+2026-07-01 11:34:12,846 | INFO: Gateway Stopped.
+2026-07-01 11:34:12,856 | INFO: GUI process terminated
+2026-07-01 11:34:13,832 | INFO: 
+
+
+
+2026-07-01 11:34:13,833 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:34:13,833 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:34:13,834 | INFO: Config loaded with OK
+2026-07-01 11:34:13,835 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:34:13,997 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:34:13,998 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:34:13,999 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:34:14,001 | INFO: GUI started (PID: 18339)
+2026-07-01 11:34:49,517 | INFO: Gateway Stopped.
+2026-07-01 11:34:49,534 | INFO: GUI process terminated
+2026-07-01 11:34:50,869 | INFO: 
+
+
+
+2026-07-01 11:34:50,869 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:34:50,870 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:34:50,871 | INFO: Config loaded with OK
+2026-07-01 11:34:50,872 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:34:51,050 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:34:51,052 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:34:51,053 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:34:51,054 | INFO: GUI started (PID: 18511)
+2026-07-01 11:37:11,772 | INFO: Connected to ADC on port 5040 from 192.168.4.103:63822
+2026-07-01 11:37:12,783 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:63823
+2026-07-01 11:37:13,978 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:63824
+2026-07-01 11:37:50,069 | INFO: Disconnected Port 5020 from 192.168.4.103:63824
+2026-07-01 11:37:50,995 | INFO: Disconnected Port 5030 from 192.168.4.103:63823
+2026-07-01 11:37:52,108 | INFO: Disconnected ADC Port 5040 from 192.168.4.103:63822
+2026-07-01 11:38:14,987 | INFO: Gateway Stopped.
+2026-07-01 11:38:15,006 | INFO: GUI process terminated
+2026-07-01 11:38:16,179 | INFO: 
+
+
+
+2026-07-01 11:38:16,179 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:38:16,179 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:38:16,180 | INFO: Config loaded with OK
+2026-07-01 11:38:16,181 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:38:16,342 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:38:16,343 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:38:16,344 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:38:16,346 | INFO: GUI started (PID: 19286)
+2026-07-01 11:38:22,718 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:63827
+2026-07-01 11:38:24,597 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:63828
+2026-07-01 11:38:27,184 | INFO: Connected to ADC on port 5040 from 192.168.4.103:63829
+2026-07-01 11:38:39,291 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:41,305 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:44,308 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:45,343 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:46,428 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:48,314 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:49,351 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:50,436 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:51,509 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:54,357 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:55,428 | ERROR: Slave ID 2 No Response
+2026-07-01 11:38:56,463 | ERROR: Slave ID 2 No Response
+2026-07-01 11:39:06,480 | ERROR: Slave ID 10 No Response
+2026-07-01 11:39:07,578 | ERROR: Slave ID 10 No Response
+2026-07-01 11:39:12,510 | ERROR: Slave ID 2 No Response
+2026-07-01 11:39:13,545 | ERROR: Slave ID 2 No Response
+2026-07-01 11:39:18,590 | ERROR: Slave ID 2 No Response
+2026-07-01 11:39:22,648 | ERROR: Slave ID 10 No Response
+2026-07-01 11:39:37,732 | ERROR: Slave ID 10 No Response
+2026-07-01 11:39:38,835 | ERROR: Slave ID 10 No Response
+2026-07-01 11:39:49,818 | ERROR: Slave ID 2 No Response
+2026-07-01 11:39:50,855 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:14,970 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:16,019 | ERROR: Slave ID 10 No Response
+2026-07-01 11:40:21,002 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:23,020 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:24,056 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:25,106 | ERROR: Slave ID 10 No Response
+2026-07-01 11:40:27,032 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:28,083 | ERROR: Slave ID 10 No Response
+2026-07-01 11:40:32,052 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:36,078 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:42,126 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:48,140 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:49,176 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:55,158 | ERROR: Slave ID 2 No Response
+2026-07-01 11:40:56,191 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:01,154 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:02,227 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:03,263 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:12,245 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:13,279 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:24,318 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:26,321 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:27,353 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:29,341 | ERROR: Slave ID 10 No Response
+2026-07-01 11:41:30,379 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:50,453 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:52,482 | ERROR: Slave ID 2 No Response
+2026-07-01 11:41:56,518 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:03,622 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:05,652 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:11,669 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:18,677 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:19,733 | ERROR: Slave ID 10 No Response
+2026-07-01 11:42:26,718 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:28,742 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:29,792 | ERROR: Slave ID 10 No Response
+2026-07-01 11:42:31,766 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:32,836 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:36,845 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:42,923 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:43,956 | ERROR: Slave ID 2 No Response
+2026-07-01 11:42:51,006 | ERROR: Slave ID 10 No Response
+2026-07-01 11:42:52,862 | INFO: Gateway Stopped.
+2026-07-01 11:42:52,873 | INFO: GUI process terminated
+2026-07-01 11:42:55,073 | INFO: 
+
+
+
+2026-07-01 11:42:55,073 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:42:55,073 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:42:55,074 | INFO: Config loaded with OK
+2026-07-01 11:42:55,075 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:42:55,235 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:42:55,237 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:42:55,239 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:42:55,241 | INFO: GUI started (PID: 21058)
+2026-07-01 11:43:01,806 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:58157
+2026-07-01 11:43:03,469 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:58159
+2026-07-01 11:43:05,014 | INFO: Connected to ADC on port 5040 from 192.168.4.103:58160
+2026-07-01 11:43:28,031 | ERROR: Slave ID 2 No Response
+2026-07-01 11:44:12,167 | INFO: Gateway Stopped.
+2026-07-01 11:44:12,184 | INFO: GUI process terminated
+2026-07-01 11:44:13,425 | INFO: 
+
+
+
+2026-07-01 11:44:13,426 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:44:13,426 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:44:13,427 | INFO: Config loaded with OK
+2026-07-01 11:44:13,428 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:44:13,622 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:44:13,623 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:44:13,623 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:44:13,625 | INFO: GUI started (PID: 21420)
+2026-07-01 11:44:22,709 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:63820
+2026-07-01 11:44:24,413 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:63821
+2026-07-01 11:44:26,241 | INFO: Connected to ADC on port 5040 from 192.168.4.103:63822
+2026-07-01 11:44:37,117 | ERROR: Slave ID 2 No Response
+2026-07-01 11:44:42,297 | ERROR: Slave ID 10 No Response
+2026-07-01 11:45:57,462 | ERROR: Slave ID 2 No Response
+2026-07-01 11:46:44,763 | ERROR: Slave ID 2 No Response
+2026-07-01 11:46:57,056 | INFO: Gateway Stopped.
+2026-07-01 11:46:57,073 | INFO: GUI process terminated
+2026-07-01 11:46:58,021 | INFO: 
+
+
+
+2026-07-01 11:46:58,021 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:46:58,022 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:46:58,023 | INFO: Config loaded with OK
+2026-07-01 11:46:58,024 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:46:58,187 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:46:58,188 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:46:58,189 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:46:58,190 | INFO: GUI started (PID: 22109)
+2026-07-01 11:47:17,080 | INFO: Gateway Stopped.
+2026-07-01 11:47:17,113 | INFO: GUI process terminated
+2026-07-01 11:47:19,258 | INFO: 
+
+
+
+2026-07-01 11:47:19,258 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:47:19,259 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:47:19,259 | INFO: Config loaded with OK
+2026-07-01 11:47:19,260 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:47:19,426 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:47:19,427 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:47:19,428 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:47:19,430 | INFO: GUI started (PID: 22243)
+2026-07-01 11:48:33,207 | INFO: Gateway Stopped.
+2026-07-01 11:48:33,224 | INFO: GUI process terminated
+2026-07-01 11:48:34,460 | INFO: 
+
+
+
+2026-07-01 11:48:34,460 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:48:34,461 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:48:34,462 | INFO: Config loaded with OK
+2026-07-01 11:48:34,463 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:48:34,655 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:48:34,657 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:48:34,658 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:48:34,660 | INFO: GUI started (PID: 22549)
+2026-07-01 11:53:03,846 | INFO: Gateway Stopped.
+2026-07-01 11:53:03,862 | INFO: GUI process terminated
+2026-07-01 11:53:04,631 | INFO: 
+
+
+
+2026-07-01 11:53:04,632 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:53:04,632 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:53:04,633 | INFO: Config loaded with OK
+2026-07-01 11:53:04,634 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:53:04,795 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:53:04,796 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:53:04,797 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:53:04,799 | INFO: GUI started (PID: 23403)
+2026-07-01 11:53:28,916 | INFO: Gateway Stopped.
+2026-07-01 11:53:28,933 | INFO: GUI process terminated
+2026-07-01 11:55:52,691 | INFO: 
+
+
+
+2026-07-01 11:55:52,691 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:55:52,692 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:55:52,692 | INFO: Config loaded with OK
+2026-07-01 11:55:52,693 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:55:52,854 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:55:52,855 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:55:52,856 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:55:52,857 | INFO: GUI started (PID: 23828)
+2026-07-01 11:56:06,629 | INFO: Gateway Stopped.
+2026-07-01 11:56:06,648 | INFO: GUI process terminated
+2026-07-01 11:56:42,083 | INFO: 
+
+
+
+2026-07-01 11:56:42,083 | INFO: === TMU Modbus Gateway ===
+2026-07-01 11:56:42,083 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 11:56:42,084 | INFO: Config loaded with OK
+2026-07-01 11:56:42,085 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 11:56:42,247 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 11:56:42,248 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 11:56:42,249 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 11:56:42,250 | INFO: GUI started (PID: 24095)
+2026-07-01 11:59:12,798 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:49737
+2026-07-01 12:02:51,456 | INFO: Disconnected Port 5030 from 192.168.4.103:49737
+2026-07-01 13:01:59,735 | INFO: Gateway Stopped.
+2026-07-01 13:01:59,751 | INFO: GUI process terminated
+2026-07-01 13:09:17,769 | INFO: 
+
+
+
+2026-07-01 13:09:17,769 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:09:17,770 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:09:17,771 | INFO: Config loaded with OK
+2026-07-01 13:09:17,772 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:09:17,936 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:09:17,938 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:09:17,939 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:09:17,940 | INFO: GUI started (PID: 35876)
+2026-07-01 13:11:05,259 | INFO: Gateway Stopped.
+2026-07-01 13:11:06,882 | INFO: 
+
+
+
+2026-07-01 13:11:06,883 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:11:06,885 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:11:06,887 | INFO: Config loaded with OK
+2026-07-01 13:11:06,891 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:11:07,174 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:11:07,178 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:11:07,181 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:11:07,185 | INFO: GUI started (PID: 36234)
+2026-07-01 13:12:25,257 | INFO: Gateway Stopped.
+2026-07-01 13:12:26,531 | INFO: 
+
+
+
+2026-07-01 13:12:26,531 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:12:26,532 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:12:26,532 | INFO: Config loaded with OK
+2026-07-01 13:12:26,533 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:12:26,712 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:12:26,713 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:12:26,714 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:12:26,716 | INFO: GUI started (PID: 36493)
+2026-07-01 13:14:19,177 | INFO: Gateway Stopped.
+2026-07-01 13:14:20,196 | INFO: 
+
+
+
+2026-07-01 13:14:20,197 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:14:20,197 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:14:20,198 | INFO: Config loaded with OK
+2026-07-01 13:14:20,199 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:14:20,366 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:14:20,367 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:14:20,369 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:14:20,371 | INFO: GUI started (PID: 36885)
+2026-07-01 13:14:33,494 | INFO: Gateway Stopped.
+2026-07-01 13:14:33,511 | INFO: GUI process terminated
+2026-07-01 13:14:34,960 | INFO: 
+
+
+
+2026-07-01 13:14:34,961 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:14:34,961 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:14:34,961 | INFO: Config loaded with OK
+2026-07-01 13:14:34,963 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:14:35,125 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:14:35,126 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:14:35,127 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:14:35,128 | INFO: GUI started (PID: 36982)
+2026-07-01 13:20:51,431 | INFO: Gateway Stopped.
+2026-07-01 13:20:52,563 | INFO: 
+
+
+
+2026-07-01 13:20:52,563 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:20:52,563 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:20:52,564 | INFO: Config loaded with OK
+2026-07-01 13:20:52,565 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:20:52,746 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:20:52,748 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:20:52,749 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:20:52,751 | INFO: GUI started (PID: 38193)
+2026-07-01 13:30:59,274 | INFO: Gateway Stopped.
+2026-07-01 13:31:41,941 | INFO: 
+
+
+
+2026-07-01 13:31:41,941 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:31:41,942 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:31:41,943 | INFO: Config loaded with OK
+2026-07-01 13:31:41,944 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:31:42,107 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:31:42,109 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:31:42,109 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:31:42,111 | INFO: GUI started (PID: 40180)
+2026-07-01 13:31:59,856 | INFO: Gateway Stopped.
+2026-07-01 13:32:20,202 | INFO: 
+
+
+
+2026-07-01 13:32:20,203 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:32:20,203 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:32:20,203 | INFO: Config loaded with OK
+2026-07-01 13:32:20,204 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:32:20,364 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:32:20,365 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:32:20,366 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:32:20,367 | INFO: GUI started (PID: 40348)
+2026-07-01 13:33:14,617 | INFO: Gateway Stopped.
+2026-07-01 13:33:16,163 | INFO: 
+
+
+
+2026-07-01 13:33:16,163 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:33:16,164 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:33:16,164 | INFO: Config loaded with OK
+2026-07-01 13:33:16,166 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:33:16,330 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:33:16,331 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:33:16,332 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:33:16,334 | INFO: GUI started (PID: 40576)
+2026-07-01 13:34:26,471 | INFO: Gateway Stopped.
+2026-07-01 13:34:28,522 | INFO: 
+
+
+
+2026-07-01 13:34:28,523 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:34:28,524 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:34:28,525 | INFO: Config loaded with OK
+2026-07-01 13:34:28,527 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:34:28,710 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:34:28,711 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:34:28,712 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:34:28,713 | INFO: GUI started (PID: 40880)
+2026-07-01 13:35:14,332 | INFO: Gateway Stopped.
+2026-07-01 13:35:14,349 | INFO: GUI process terminated
+2026-07-01 13:35:16,195 | INFO: 
+
+
+
+2026-07-01 13:35:16,195 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:35:16,195 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:35:16,196 | INFO: Config loaded with OK
+2026-07-01 13:35:16,197 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:35:16,362 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:35:16,364 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:35:16,365 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:35:16,367 | INFO: GUI started (PID: 41104)
+2026-07-01 13:35:22,726 | INFO: Gateway Stopped.
+2026-07-01 13:35:22,736 | INFO: GUI process terminated
+2026-07-01 13:36:13,626 | INFO: 
+
+
+
+2026-07-01 13:36:13,626 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:36:13,626 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:36:13,627 | INFO: Config loaded with OK
+2026-07-01 13:36:13,628 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:36:13,791 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:36:13,792 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:36:13,793 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:36:13,794 | INFO: GUI started (PID: 41316)
+2026-07-01 13:36:44,834 | INFO: Gateway Stopped.
+2026-07-01 13:36:44,850 | INFO: GUI process terminated
+2026-07-01 13:36:45,768 | INFO: 
+
+
+
+2026-07-01 13:36:45,768 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:36:45,768 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:36:45,769 | INFO: Config loaded with OK
+2026-07-01 13:36:45,770 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:36:45,933 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:36:45,934 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:36:45,935 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:36:45,936 | INFO: GUI started (PID: 41464)
+2026-07-01 13:36:55,163 | INFO: Gateway Stopped.
+2026-07-01 13:36:55,181 | INFO: GUI process terminated
+2026-07-01 13:36:56,525 | INFO: 
+
+
+
+2026-07-01 13:36:56,525 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:36:56,526 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:36:56,526 | INFO: Config loaded with OK
+2026-07-01 13:36:56,528 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:36:56,711 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:36:56,713 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:36:56,714 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:36:56,716 | INFO: GUI started (PID: 41554)
+2026-07-01 13:37:04,838 | INFO: Gateway Stopped.
+2026-07-01 13:37:04,855 | INFO: GUI process terminated
+2026-07-01 13:37:05,728 | INFO: 
+
+
+
+2026-07-01 13:37:05,729 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:37:05,729 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:37:05,730 | INFO: Config loaded with OK
+2026-07-01 13:37:05,731 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:37:05,893 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:37:05,895 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:37:05,896 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:37:05,897 | INFO: GUI started (PID: 41629)
+2026-07-01 13:37:21,100 | INFO: Gateway Stopped.
+2026-07-01 13:37:21,117 | INFO: GUI process terminated
+2026-07-01 13:37:22,490 | INFO: 
+
+
+
+2026-07-01 13:37:22,491 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:37:22,491 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:37:22,493 | INFO: Config loaded with OK
+2026-07-01 13:37:22,494 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:37:22,693 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:37:22,694 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:37:22,695 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:37:22,696 | INFO: GUI started (PID: 41727)
+2026-07-01 13:37:48,963 | INFO: Gateway Stopped.
+2026-07-01 13:48:35,772 | INFO: 
+
+
+
+2026-07-01 13:48:35,773 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:48:35,773 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:48:35,773 | INFO: Config loaded with OK
+2026-07-01 13:48:35,775 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:48:35,933 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:48:35,934 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:48:35,935 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:48:35,936 | INFO: GUI started (PID: 42877)
+2026-07-01 13:49:12,546 | INFO: 
+
+
+
+2026-07-01 13:49:12,557 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:49:12,557 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:49:12,561 | INFO: Config loaded with OK
+2026-07-01 13:49:12,562 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:49:12,991 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:49:12,995 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:49:12,997 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:49:13,009 | INFO: GUI started (PID: 825)
+2026-07-01 13:49:34,824 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:50644
+2026-07-01 13:49:37,798 | ERROR: Slave ID 10 No Response
+2026-07-01 13:49:40,806 | ERROR: Slave ID 10 No Response
+2026-07-01 13:49:41,810 | ERROR: Slave ID 10 No Response
+2026-07-01 13:49:57,156 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:50645
+2026-07-01 13:49:59,648 | ERROR: Slave ID 2 No Response
+2026-07-01 13:49:59,795 | WARNING:  Connection reset by 192.168.4.103:50645
+2026-07-01 13:49:59,796 | INFO: Disconnected Port 5030 from 192.168.4.103:50645
+2026-07-01 13:50:01,019 | INFO: Connected to ADC on port 5040 from 192.168.4.103:50646
+2026-07-01 13:50:04,507 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:50647
+2026-07-01 13:50:07,658 | ERROR: Slave ID 2 No Response
+2026-07-01 13:50:08,663 | ERROR: Slave ID 2 No Response
+2026-07-01 13:50:10,673 | ERROR: Slave ID 2 No Response
+2026-07-01 13:50:12,682 | ERROR: Slave ID 2 No Response
+2026-07-01 13:50:14,089 | WARNING:  Connection reset by 192.168.4.103:50644
+2026-07-01 13:50:14,089 | INFO: Disconnected Port 5020 from 192.168.4.103:50644
+2026-07-01 13:50:14,692 | ERROR: Slave ID 2 No Response
+2026-07-01 13:50:15,161 | WARNING:  Connection reset by 192.168.4.103:50647
+2026-07-01 13:50:15,162 | INFO: Disconnected Port 5030 from 192.168.4.103:50647
+2026-07-01 13:50:15,913 | INFO: Disconnected ADC Port 5040 from 192.168.4.103:50646
+2026-07-01 13:53:30,252 | INFO: 
+
+
+
+2026-07-01 13:53:30,253 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:53:30,254 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:53:30,255 | INFO: Config loaded with OK
+2026-07-01 13:53:30,256 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:53:30,426 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:53:30,427 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:53:30,428 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:53:30,429 | INFO: GUI started (PID: 3706)
+2026-07-01 13:58:33,792 | INFO: 
+
+
+
+2026-07-01 13:58:33,792 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:58:33,792 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:58:33,793 | INFO: Config loaded with OK
+2026-07-01 13:58:33,794 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 13:58:33,955 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:58:33,956 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:58:33,957 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:58:33,958 | INFO: GUI started (PID: 4210)
+2026-07-01 13:59:18,214 | INFO: 
+
+
+
+2026-07-01 13:59:18,217 | INFO: === TMU Modbus Gateway ===
+2026-07-01 13:59:18,218 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 13:59:18,220 | INFO: Config loaded with OK
+2026-07-01 13:59:18,220 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:18,285 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:18,296 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:18,474 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 13:59:18,475 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 13:59:18,476 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 13:59:18,480 | INFO: GUI started (PID: 1648)
+2026-07-01 13:59:19,313 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:19,314 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:20,315 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:20,316 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:21,317 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:21,317 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:22,318 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:22,319 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:23,319 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:23,319 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:24,320 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:24,321 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:25,321 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:25,322 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:26,322 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:26,323 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:27,323 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:27,324 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:28,324 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:28,325 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:29,325 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:29,326 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:30,326 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:30,327 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:31,327 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:31,328 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:32,328 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:32,329 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:33,329 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:33,329 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:34,330 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:34,330 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:35,331 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:35,331 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:36,332 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:36,332 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:37,333 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:37,333 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:38,334 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:38,335 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 13:59:39,336 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 14:00:49,868 | INFO: 
+
+
+
+2026-07-01 14:00:49,870 | INFO: === TMU Modbus Gateway ===
+2026-07-01 14:00:49,870 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-01 14:00:49,871 | INFO: Config loaded with OK
+2026-07-01 14:00:49,872 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:49,929 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:49,930 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:50,135 | INFO: Ready listening on Port 5040 for ADC
+2026-07-01 14:00:50,137 | INFO: Ready listening on Port 5020 for Slave ID 10
+2026-07-01 14:00:50,140 | INFO: Ready listening on Port 5030 for Slave ID 2
+2026-07-01 14:00:50,146 | INFO: GUI started (PID: 1623)
+2026-07-01 14:00:50,931 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:50,931 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:51,933 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:51,933 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:52,934 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:52,935 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:53,936 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:53,936 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:54,937 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:54,937 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:55,938 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:55,938 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:56,939 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:56,939 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:57,940 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:57,941 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:58,941 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:58,942 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:59,943 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:00:59,944 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:00,944 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:00,945 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:01,945 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:01,947 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:02,948 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:02,949 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:03,950 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:03,950 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:04,953 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:04,953 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:05,954 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:05,955 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:06,956 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:06,956 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:07,957 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:07,957 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:08,958 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:08,959 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:09,959 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:09,960 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:10,961 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:10,961 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-01 14:01:11,962 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-01 14:02:51,611 | INFO: Connected to 5020 -> Slave 10 from 192.168.4.103:64202
+2026-07-01 14:02:53,672 | INFO: Connected to 5030 -> Slave 2 from 192.168.4.103:64203
+2026-07-01 14:03:03,207 | INFO: Connected to ADC on port 5040 from 192.168.4.103:64205
+2026-07-01 14:03:47,757 | ERROR: Slave ID 2 No Response
+2026-07-01 14:03:50,733 | ERROR: Slave ID 2 No Response
+2026-07-01 14:03:52,747 | ERROR: Slave ID 2 No Response
+2026-07-01 14:03:56,768 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:12,932 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:14,938 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:17,984 | ERROR: Slave ID 10 No Response
+2026-07-01 14:04:36,072 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:37,108 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:39,089 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:45,104 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:46,185 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:47,257 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:48,292 | ERROR: Slave ID 2 No Response
+2026-07-01 14:04:53,152 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:10,269 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:14,295 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:29,444 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:33,482 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:35,479 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:37,494 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:40,488 | ERROR: Slave ID 2 No Response
+2026-07-01 14:05:42,491 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:11,661 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:12,697 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:19,749 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:22,785 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:23,820 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:26,829 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:27,863 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:35,929 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:37,950 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:46,052 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:47,092 | ERROR: Slave ID 10 No Response
+2026-07-01 14:06:51,081 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:53,103 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:55,125 | ERROR: Slave ID 2 No Response
+2026-07-01 14:06:56,199 | ERROR: Slave ID 2 No Response
+2026-07-01 14:07:00,129 | ERROR: Slave ID 2 No Response
+2026-07-01 14:07:03,157 | ERROR: Slave ID 10 No Response
+2026-07-01 14:07:04,192 | ERROR: Slave ID 2 No Response
+2026-07-01 14:07:08,208 | ERROR: Slave ID 2 No Response
+2026-07-01 14:07:09,295 | ERROR: Slave ID 2 No Response
+2026-07-01 14:07:26,382 | ERROR: Slave ID 2 No Response
+2026-07-01 14:07:27,414 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:01,561 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:15,684 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:16,753 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:21,677 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:31,758 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:33,750 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:35,783 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:39,823 | ERROR: Slave ID 10 No Response
+2026-07-01 14:08:40,861 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:42,840 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:48,923 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:51,976 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:53,010 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:54,091 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:56,986 | ERROR: Slave ID 2 No Response
+2026-07-01 14:08:59,000 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:00,071 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:04,029 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:06,042 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:08,051 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:09,108 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:10,191 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:11,262 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:12,297 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:18,044 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:19,079 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:21,062 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:22,130 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:35,174 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:44,321 | ERROR: Slave ID 2 No Response
+2026-07-01 14:09:48,377 | ERROR: Slave ID 10 No Response
+2026-07-01 14:09:52,373 | ERROR: Slave ID 10 No Response
+2026-07-01 14:09:59,398 | ERROR: Slave ID 2 No Response
+2026-07-01 14:10:22,558 | ERROR: Slave ID 2 No Response
+2026-07-01 14:10:23,628 | ERROR: Slave ID 2 No Response
+2026-07-01 14:10:26,584 | ERROR: Slave ID 2 No Response
+2026-07-01 14:10:29,612 | ERROR: Slave ID 2 No Response
+2026-07-01 14:10:38,721 | ERROR: Slave ID 2 No Response
+2026-07-01 14:10:59,963 | ERROR: Slave ID 10 No Response
+2026-07-01 14:11:20,037 | ERROR: Slave ID 10 No Response
+2026-07-01 14:11:28,099 | ERROR: Slave ID 2 No Response
+2026-07-01 14:11:34,176 | ERROR: Slave ID 2 No Response
+2026-07-01 14:11:48,336 | ERROR: Slave ID 2 No Response
+2026-07-01 14:12:02,553 | ERROR: Slave ID 2 No Response
+2026-07-01 14:12:08,630 | ERROR: Slave ID 2 No Response
+2026-07-01 14:12:39,014 | ERROR: Slave ID 10 No Response
+2026-07-01 14:12:40,050 | ERROR: Slave ID 2 No Response
+2026-07-01 14:12:43,024 | ERROR: Slave ID 2 No Response
+2026-07-01 14:13:55,971 | ERROR: Slave ID 2 No Response
+2026-07-01 14:14:19,103 | ERROR: Slave ID 2 No Response
+2026-07-01 14:14:33,110 | ERROR: Slave ID 2 No Response
+2026-07-01 14:14:35,141 | ERROR: Slave ID 2 No Response
+2026-07-01 14:14:39,156 | ERROR: Slave ID 2 No Response
+2026-07-01 14:14:56,179 | ERROR: Slave ID 2 No Response
+2026-07-01 14:15:45,567 | ERROR: Slave ID 10 No Response
+2026-07-01 14:16:07,643 | ERROR: Slave ID 2 No Response
+2026-07-01 14:16:18,655 | ERROR: Slave ID 2 No Response
+2026-07-01 14:16:34,887 | ERROR: Slave ID 2 No Response
+2026-07-01 14:16:41,984 | ERROR: Slave ID 2 No Response
+2026-07-01 14:17:27,546 | ERROR: Slave ID 2 No Response
+2026-07-01 14:17:43,734 | ERROR: Slave ID 2 No Response
+2026-07-01 14:17:50,831 | ERROR: Slave ID 2 No Response

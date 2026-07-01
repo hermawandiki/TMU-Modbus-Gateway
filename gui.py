@@ -4,32 +4,37 @@ import json
 import time
 from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton, 
                              QVBoxLayout, QHBoxLayout, QGridLayout, 
-                             QStackedWidget, QScrollArea, QFrame, QSizePolicy)
-from PyQt6.QtCore import Qt, QTimer
+                             QStackedWidget, QScrollArea, QFrame, QSizePolicy,
+                             QGraphicsDropShadowEffect, QToolButton)
+from PyQt6.QtCore import Qt, QTimer, QSize
+from PyQt6.QtGui import QPixmap, QIcon
 
 GUI_DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gui_data.json")
 
-UNITS = {
-    "Oil Level": "%",
-    "Oil Temperature": "C",
-    "Oil Pressure": "bar",
-    "Bus U Temperature": "C",
-    "Bus V Temperature": "C",
-    "Bus W Temperature": "C",
-    "WIT U Temperature": "C",
-    "WIT V Temperature": "C",
-    "WIT W Temperature": "C",
-    "U-N Phase Voltage": "V",
-    "V-N Phase Voltage": "V",
-    "W-N Phase Voltage": "V",
-    "U-V Phase Voltage": "V",
-    "V-W Phase Voltage": "V",
-    "U-W Phase Voltage": "V",
-    "U Phase Current": "A",
-    "V Phase Current": "A",
-    "W Phase Current": "A",
-    "Average Current": "A",
-}
+lcd_items = [
+    ("TSU Oil Level", "%"),
+    ("TSU Oil Temperature", "°C"),
+    ("TSU Oil Pressure", "bar"),
+    ("eDMCR Oil Level", "%"),
+    ("eDMCR Oil Temperature", "°C"),
+    ("eDMCR Oil Pressure", "bar"),
+    ("Bus U Temperature", "°C"),
+    ("Bus V Temperature", "°C"),
+    ("Bus W Temperature", "°C"),
+    ("WIT U Temperature", "°C"),
+    ("WIT V Temperature", "°C"),
+    ("WIT W Temperature", "°C"),
+    ("U-N Phase Voltage", "V"),
+    ("V-N Phase Voltage", "V"),
+    ("W-N Phase Voltage", "V"),
+    ("U-V Phase Voltage", "V"),
+    ("V-W Phase Voltage", "V"),
+    ("U-W Phase Voltage", "V"),
+    ("U Phase Current", "A"),
+    ("V Phase Current", "A"),
+    ("W Phase Current", "A"),
+    ("Average Current", "A"),
+]
 
 class MainWindow(QWidget):
     def __init__(self):
@@ -44,8 +49,19 @@ class MainWindow(QWidget):
         self.setup_auto_scroll()
         self.setup_data_polling()
 
+    def add_shadow(self, widget, blur=22, x_offset=0, y_offset=5, alpha=90):
+        shadow = QGraphicsDropShadowEffect(self)
+        shadow.setBlurRadius(blur)
+        shadow.setXOffset(x_offset)
+        shadow.setYOffset(y_offset)
+        shadow.setColor(Qt.GlobalColor.black)
+        color = shadow.color()
+        color.setAlpha(alpha)
+        shadow.setColor(color)
+        widget.setGraphicsEffect(shadow)
+
     def init_gui(self):
-        self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
         self.setFixedSize(800, 480)
         self.setStyleSheet("background-color: #F9F6EE;")
         
@@ -58,21 +74,8 @@ class MainWindow(QWidget):
         main_page = self.create_main_page()
         self.page_data.addWidget(main_page)
         
-        data_physical = [
-            "Oil Level", "Oil Temperature", "Oil Pressure", 
-            "Bus U Temperature", "Bus V Temperature", "Bus W Temperature", 
-            "WIT U Temperature", "WIT V Temperature", "WIT W Temperature"
-        ]
-        
-        data_electrical = [
-            "U-N Phase Voltage", "V-N Phase Voltage", "W-N Phase Voltage", 
-            "U-V Phase Voltage", "V-W Phase Voltage", "U-W Phase Voltage", 
-            "U Phase Current", "V Phase Current", "W Phase Current", 
-            "Average Current"
-        ]
-        
-        hal_phys, scroll_phys = self.create_page_data("Physical Data Monitoring", data_physical)
-        hal_elec, scroll_elec = self.create_page_data("Electrical Data Monitoring", data_electrical)
+        hal_phys, scroll_phys = self.create_page_data("Physical Data Monitoring", lcd_items[:12])
+        hal_elec, scroll_elec = self.create_page_data("Electrical Data Monitoring", lcd_items[12:])
         
         self.page_data.addWidget(hal_phys)
         self.scroll_areas[1] = scroll_phys
@@ -106,14 +109,19 @@ class MainWindow(QWidget):
             updated_at = float(payload.get("updated_at", 0.0))
             self.last_updated_at = updated_at
 
-            values = payload.get("values", {})
-            for name, label in self.label_val.items():
-                if name in values:
-                    label.setText(self.format_value_with_unit(name, values[name]))
+            values = payload.get("values", [])
+            if isinstance(values, list):
+                for index, (name, unit) in enumerate(lcd_items):
+                    if index < len(values) and name in self.label_val:
+                        self.label_val[name].setText(self.format_value_with_unit(unit, values[index]))
+            elif isinstance(values, dict):
+                for name, label in self.label_val.items():
+                    if name in values:
+                        unit = next((item_unit for item_name, item_unit in lcd_items if item_name == name), "")
+                        label.setText(self.format_value_with_unit(unit, values[name]))
         except Exception: pass
 
-    def format_value_with_unit(self, name, value):
-        unit = UNITS.get(name, "")
+    def format_value_with_unit(self, unit, value):
         if isinstance(value, float):
             text_val = f"{value:.2f}"
         elif isinstance(value, int):
@@ -121,7 +129,13 @@ class MainWindow(QWidget):
         else:
             text_val = str(value)
 
-        return f"{text_val} {unit}".strip()
+        if not unit:
+            return text_val
+
+        return (
+            f'<span style="font-size:28px; color:#000080; font-weight:700;">{text_val}</span>'
+            f'<span style="font-size:16px; color:#8A8A8A; font-weight:400;"> {unit}</span>'
+        )
 
     def run_auto_scroll(self):
         idx = self.page_data.currentIndex()
@@ -148,17 +162,35 @@ class MainWindow(QWidget):
         widget = QWidget()
         layout = QVBoxLayout(widget)
         layout.setContentsMargins(30, 20, 30, 20)
-        
-        exit_layout = QHBoxLayout()
+
+        top_bar_layout = QHBoxLayout()
+
+        label_logo_bd = QLabel()
+        logo_bd = QPixmap("assets/logoBD.png")
+        if not logo_bd.isNull():
+            logo_bd_scaled = logo_bd.scaledToHeight(50, Qt.TransformationMode.SmoothTransformation)
+            label_logo_bd.setPixmap(logo_bd_scaled)
+
+        label_logo_tmu = QLabel()
+        logo_tmu = QPixmap("assets/logoTMU.png")
+        if not logo_tmu.isNull():
+            logo_tmu_scaled = logo_tmu.scaledToHeight(40, Qt.TransformationMode.SmoothTransformation)
+            label_logo_tmu.setPixmap(logo_tmu_scaled)
+
         btn_exit = QPushButton("X")
         btn_exit.setFixedSize(40, 40)
         btn_exit.setStyleSheet("""
             QPushButton { background-color: #AF3F3E; color: white; font-weight: bold; font-size: 16px; border-radius: 5px; }
             QPushButton:pressed { background-color: #8F3332; }
         """)
+        self.add_shadow(btn_exit, blur=16, y_offset=3, alpha=110)
         btn_exit.clicked.connect(QApplication.quit)
-        exit_layout.addStretch()
-        exit_layout.addWidget(btn_exit)
+
+        top_bar_layout.addWidget(label_logo_bd)
+        top_bar_layout.addSpacing(15)
+        top_bar_layout.addWidget(label_logo_tmu, alignment=Qt.AlignmentFlag.AlignTop)
+        top_bar_layout.addStretch()
+        top_bar_layout.addWidget(btn_exit)
         
         label_header = QLabel("Transformer Monitoring Unit\nPT Bambang Djaja")
         label_header.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -167,19 +199,29 @@ class MainWindow(QWidget):
         button_layout = QHBoxLayout()
         button_layout.setSpacing(40)
         
-        btn_physical = QPushButton("Physical Data")
+        btn_physical = QToolButton()
+        btn_physical.setText("Physical Data")
+        btn_physical.setIcon(QIcon("assets/physical.png"))
+        btn_physical.setIconSize(QSize(72, 72))
+        btn_physical.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         btn_physical.setStyleSheet("""
-            QPushButton { background-color: #F0A04B; color: #333333; font-size: 26px; font-weight: bold; border-radius: 15px; }
-            QPushButton:pressed { background-color: #D18534; } 
+            QToolButton { background-color: #F0A04B; color: #333333; font-size: 24px; font-weight: bold; border-radius: 15px; padding: 30px; }
+            QToolButton:pressed { background-color: #D18534; } 
         """)
+        self.add_shadow(btn_physical)
         btn_physical.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         btn_physical.clicked.connect(lambda: self.page_data.setCurrentIndex(1)) 
         
-        btn_electrical = QPushButton("Electrical Data")
+        btn_electrical = QToolButton()
+        btn_electrical.setText("Electrical Data")
+        btn_electrical.setIcon(QIcon("assets/electrical.png"))
+        btn_electrical.setIconSize(QSize(72, 72))
+        btn_electrical.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         btn_electrical.setStyleSheet("""
-            QPushButton { background-color: #FBDA7B; color: #333333; font-size: 26px; font-weight: bold; border-radius: 15px; }
-            QPushButton:pressed { background-color: #DCAE47; }
+            QToolButton { background-color: #FBDA7B; color: #333333; font-size: 24px; font-weight: bold; border-radius: 15px; padding: 30px; }
+            QToolButton:pressed { background-color: #DCAE47; }
         """)
+        self.add_shadow(btn_electrical)
         btn_electrical.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         btn_electrical.clicked.connect(lambda: self.page_data.setCurrentIndex(2)) 
         
@@ -190,7 +232,8 @@ class MainWindow(QWidget):
         label_footer.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label_footer.setStyleSheet("font-size: 14px; color: #666666;")
         
-        layout.addLayout(exit_layout)
+        layout.addLayout(top_bar_layout)
+        layout.addSpacing(15)
         layout.addWidget(label_header)
         layout.addSpacing(30)
         layout.addLayout(button_layout)
@@ -212,14 +255,23 @@ class MainWindow(QWidget):
             QPushButton { background-color: #AF3F3E; color: white; font-weight: bold; font-size: 14px; border-radius: 5px; }
             QPushButton:pressed { background-color: #8F3332; }
         """)
+        self.add_shadow(btn_back, blur=14, y_offset=3, alpha=110)
         btn_back.clicked.connect(lambda: self.page_data.setCurrentIndex(0))
         
         label_title = QLabel(title)
         label_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label_title.setStyleSheet("font-size: 24px; font-weight: bold; color: #333333;")
 
+        label_logo_tmu = QLabel()
+        logo_tmu = QPixmap("assets/logoTMU.png")
+        if not logo_tmu.isNull():
+            logo_tmu_scaled = logo_tmu.scaledToHeight(40, Qt.TransformationMode.SmoothTransformation)
+            label_logo_tmu.setPixmap(logo_tmu_scaled)
+
         header_layout.addWidget(btn_back)
         header_layout.addWidget(label_title, stretch=1)
+        header_layout.addStretch()
+        header_layout.addWidget(label_logo_tmu)
         
         scroll_area = QScrollArea()
         scroll_area.setWidgetResizable(True)
@@ -232,17 +284,20 @@ class MainWindow(QWidget):
         grid_layout = QGridLayout(content_widget) 
         grid_layout.setSpacing(10)
         
-        for row, name in enumerate(list_param):
+        for row, item in enumerate(list_param):
+            name, _unit = item
             frame_row = QFrame()
             frame_row.setStyleSheet("background-color: white; border-radius: 8px;")
+            self.add_shadow(frame_row, blur=18, y_offset=4, alpha=70)
             layout_row = QHBoxLayout(frame_row)
             layout_row.setContentsMargins(15, 10, 15, 10)
             
             label_name = QLabel(name)
-            label_name.setStyleSheet("font-size: 18px; color: #555555; font-weight: bold;")
+            label_name.setStyleSheet("font-size: 20px; color: #555555; font-weight: bold;")
             
             label_number = QLabel("0.0") 
             label_number.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+            label_number.setTextFormat(Qt.TextFormat.RichText)
             label_number.setStyleSheet("font-size: 22px; color: #000080; font-weight: bold;")
             
             layout_row.addWidget(label_name)

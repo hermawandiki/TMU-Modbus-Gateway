@@ -8,7 +8,6 @@ import json
 import sys
 import os
 import logging
-import random
 import Adafruit_ADS1x15
 import smbus2
 from PIL import Image, ImageDraw, ImageFont
@@ -18,23 +17,19 @@ adc = Adafruit_ADS1x15.ADS1115(address=0x48, busnum=1)
 adc_channels = 4
 adc_registers = [0] * adc_channels
 adc_lock = threading.Lock()
-global_port_map = {}
-gui_process = None
-GUI_DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gui_data.json")
-
-GUI_PHYSICAL_KEYS = [
-    "Oil Level",
-    "Oil Temperature",
-    "Oil Pressure",
+lcd_fields = [
+    "TSU Oil Level",
+    "TSU Oil Temperature",
+    "TSU Oil Pressure",
+    "eDMCR Oil Level",
+    "eDMCR Oil Temperature",
+    "eDMCR Oil Pressure",
     "Bus U Temperature",
     "Bus V Temperature",
     "Bus W Temperature",
     "WIT U Temperature",
     "WIT V Temperature",
     "WIT W Temperature",
-]
-
-GUI_ELECTRICAL_KEYS = [
     "U-N Phase Voltage",
     "V-N Phase Voltage",
     "W-N Phase Voltage",
@@ -46,6 +41,11 @@ GUI_ELECTRICAL_KEYS = [
     "W Phase Current",
     "Average Current",
 ]
+lcd_values = [0.0] * len(lcd_fields)
+lcd_lock = threading.Lock()
+global_port_map = {}
+gui_process = None
+GUI_DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gui_data.json")
 
 I2C_BUS = 1
 I2C_ADDR = 0x3C
@@ -60,19 +60,19 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-def cmd(c):
-	bus.write_byte_data(I2C_ADDR, 0x00, c)
-	
-def initOled():
+def oled_cmd(cmd):
+    bus.write_byte_data(I2C_ADDR, 0x00, cmd)
+
+def oled_init():
 	for c in [0xAE, 0x00, 0x10, 0x40, 0x81, 0xCF, 0xA1, 0xC8, 0xA6,
 			  0xA8, 0x3F, 0xD3, 0x00, 0xD5, 0x80, 0xD9, 0xF1, 0xDA,
 			  0x12, 0xDB, 0x40, 0x20, 0x00, 0x8D, 0x14, 0xAF]:
-		cmd(c)
+		oled_cmd(c)
 
-def show(image):
+def oled_show(image):
 	image = image.rotate(180)
-	cmd(0x21); cmd(0); cmd(127)
-	cmd(0x22); cmd(0); cmd(7)
+	oled_cmd(0x21); oled_cmd(0); oled_cmd(127)
+	oled_cmd(0x22); oled_cmd(0); oled_cmd(7)
 	pix = list(image.getdata())
 	buf = []
 	for page in range(8):
@@ -85,7 +85,7 @@ def show(image):
 	for i in range(0, len(buf), 16):
 		bus.write_i2c_block_data(I2C_ADDR, 0x40, buf[i:i+16])
 
-def showOled(teks: str):
+def oled_print(teks: str):
 	try:
 		font = Image.truetype("/usr/share/fonts/truetype/dejavu/DeJaVuSansMono.ttf", 10)
 	except:
@@ -96,7 +96,7 @@ def showOled(teks: str):
 	
 	for i, row in enumerate(teks.splitlines()):
 		draw.text((0, i * 12), row, font=font, fill=255)
-	show(img)
+	oled_show(img)
     
 def load_config(filename="config.json"):
     global global_port_map
@@ -155,13 +155,18 @@ def adc_handler():
             analogIn3 = adc.read_adc(3, gain=2)
             analogIn2 = adc.read_adc(2, gain=2)
             
+            oil_temp = round(((analogIn3 * 0.007630) - 50), 3)
+            oil_press = (analogIn2 - 6553) / 26214
+
+            oil_temp_m = int(oil_temp * 100) if oil_temp >= 0 else 0
+            oil_press_m = int(oil_press * 10000) if oil_press >= 0 else 0
+
+            with lcd_lock:
+                lcd_values[0] = 0.00    # Oil Level Status
+                lcd_values[1] = round(oil_temp_m / 100, 2) # Oil Temperature
+                lcd_values[2] = round(oil_press_m / 10000, 3) # Oil Pressure
+
             with adc_lock:
-                oil_temp  = round(((analogIn3 * 0.007630) - 50), 3)
-                oil_press = (analogIn2 - 6553) / 26214 
-                
-                oil_temp_m = int(oil_temp * 100) if oil_temp >= 0 else 0
-                oil_press_m = int(oil_press * 10000) if oil_press >= 0 else 0
-                
                 adc_registers[0] = oil_temp_m
                 adc_registers[1] = oil_press_m
             time.sleep(0.05)
@@ -169,6 +174,63 @@ def adc_handler():
             logging.error(f"ADC Handler error: {e}")
             print(f"[ERROR] ADC Handler error: {e}")
             time.sleep(2)
+
+def lcd_data_worker(bus: "SerialBus"):
+    from pymodbus.framer.rtu_framer import ModbusRtuFramer
+    from pymodbus.register_read_message import ReadHoldingRegistersRequest
+
+    framer = ModbusRtuFramer(None)
+    read_jobs = [(2, 0x0000, 9), (10, 0x1300, 5)]
+
+    while True:
+        try:
+            for slave_id, start_addr, qty in read_jobs:
+                request = ReadHoldingRegistersRequest(start_addr, qty)
+                request.unit_id = slave_id
+                request_frame = framer.buildPacket(request)
+                response = bus.send_and_receive(request_frame)
+
+                if not response or len(response) < 5:
+                    continue
+                if response[0] != slave_id or response[1] != 0x03:
+                    continue
+                if not validate_crc16(response):
+                    continue
+
+                byte_count = response[2]
+                payload = response[3:-2]
+                if byte_count != qty * 2 or len(payload) != qty * 2:
+                    continue
+
+                registers = struct.unpack(f">{qty}H", payload)
+
+                with lcd_lock:
+                    if slave_id == 2 and start_addr == 0x0000:
+                        lcd_values[12] = round(registers[0] / 100.0, 2) # U-N Phase Voltage
+                        lcd_values[13] = round(registers[1] / 100.0, 2) # V-N Phase Voltage
+                        lcd_values[14] = round(registers[2] / 100.0, 2) # W-N Phase Voltage
+                        lcd_values[15] = round(registers[3] / 100.0, 2) # U-V Phase Voltage
+                        lcd_values[16] = round(registers[4] / 100.0, 2) # V-W Phase Voltage
+                        lcd_values[17] = round(registers[5] / 100.0, 2) # U-W Phase Voltage
+                        lcd_values[18] = round(registers[6] / 1000.0, 3) # U Phase Current
+                        lcd_values[19] = round(registers[7] / 1000.0, 3) # V Phase Current 
+                        lcd_values[20] = round(registers[8] / 1000.0, 3) # W Phase Current
+                        lcd_values[21] = round((lcd_values[18] + lcd_values[19] + lcd_values[20]) / 3.0, 2) # Average Current
+                    elif slave_id == 10 and start_addr == 0x1300:
+                        status = registers[0]
+                        # lcd_values[] = int(status & 0x01) # Oil Level Status
+                        # lcd_values[] = int((status >> 1) & 0x01) # Oil Pressure Status
+                        # lcd_values[] = int((status >> 2) & 0x01) # Alarm Oil Temp
+                        # lcd_values[] = int((status >> 3) & 0x01) # Trip Oil Temp
+                        lcd_values[3] = registers[4] * 25.0 # Oil Level Measurement
+                        lcd_values[4] = registers[2] / 10.0 # Oil Temperature Measurement
+                        lcd_values[5] = registers[1] / 1000.0 if registers[1] >= 0 and registers[1] < 65535 else 0.00 # Oil Pressure Measurement
+
+                time.sleep(1)
+        except Exception as e:
+            logging.error(f"LCD worker error: {e}")
+            print(f"[ERROR] LCD worker error: {e}")
+        time.sleep(1)
 
 def handle_adc_client(conn: socket.socket, addr, port: int):
     logging.info(f"Connected to ADC on port {port} from {addr[0]}:{addr[1]}")
@@ -298,6 +360,38 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
             rtu_res = bus.send_and_receive(rtu_req)
 
             if rtu_res and validate_crc16(rtu_res):
+                if slave_id == 2 and fc in (0x03, 0x04):
+                    start_addr, qty = struct.unpack(">HH", tcp_req[8:12])
+                    payload = rtu_res[3:-2]
+                    if len(payload) == qty * 2:
+                        registers = struct.unpack(f">{qty}H", payload)
+                        with lcd_lock:
+                            if start_addr == 0x0000 and qty >= 9:
+                                lcd_values[12] = round(registers[0] / 100.0, 2) # U-N Phase Voltage
+                                lcd_values[13] = round(registers[1] / 100.0, 2) # V-N Phase Voltage
+                                lcd_values[14] = round(registers[2] / 100.0, 2) # W-N Phase Voltage
+                                lcd_values[15] = round(registers[3] / 100.0, 2) # U-V Phase Voltage
+                                lcd_values[16] = round(registers[4] / 100.0, 2) # V-W Phase Voltage
+                                lcd_values[17] = round(registers[5] / 100.0, 2) # U-W Phase Voltage
+                                lcd_values[18] = round(registers[6] / 1000.0, 3) # U Phase Current
+                                lcd_values[19] = round(registers[7] / 1000.0, 3) # V Phase Current 
+                                lcd_values[20] = round(registers[8] / 1000.0, 3) # W Phase Current
+                                lcd_values[21] = round((lcd_values[18] + lcd_values[19] + lcd_values[20]) / 3.0, 2) # Average Current
+                if slave_id == 10 and fc in (0x03, 0x04):
+                    start_addr, qty = struct.unpack(">HH", tcp_req[8:12])
+                    payload = rtu_res[3:-2]
+                    if len(payload) == qty * 2:
+                        registers = struct.unpack(f">{qty}H", payload)
+                        with lcd_lock:
+                            if start_addr == 0x1300 and qty >= 5:
+                                status = registers[0]
+                                # lcd_values[] = int(status & 0x01) # Oil Level Status
+                                # lcd_values[] = int((status >> 1) & 0x01) # Oil Pressure Status
+                                # lcd_values[] = int((status >> 2) & 0x01) # Alarm Oil Temp
+                                # lcd_values[] = int((status >> 3) & 0x01) # Trip Oil Temp
+                                lcd_values[3] = registers[4] * 25.0 # Oil Level Measurement
+                                lcd_values[4] = registers[2] / 10.0 # Oil Temperature Measurement
+                                lcd_values[5] = registers[1] / 1000.0 if registers[1] >= 0 and registers[1] < 65535 else 0.00 # Oil Pressure Measurement
                 conn.sendall(rtu2tcp(rtu_res, tx_id, unit_id))
                 # logging.info(f"{rtu_res.hex(' ')}")
                 # print(f"[RES  ]  {rtu_res.hex(' ')}")
@@ -395,51 +489,8 @@ def _write_gui_data(payload: dict):
     os.replace(tmp_path, GUI_DATA_FILE)
 
 def build_gui_payload() -> dict:
-    with adc_lock:
-        oil_temp = adc_registers[0] / 100.0
-        oil_press = adc_registers[1] / 10000.0
-
-    bus_u_temp = round(random.uniform(40.0, 65.0), 1)
-    bus_v_temp = round(random.uniform(40.0, 65.0), 1)
-    bus_w_temp = round(random.uniform(40.0, 65.0), 1)
-    wit_u_temp = round(random.uniform(45.0, 80.0), 1)
-    wit_v_temp = round(random.uniform(45.0, 80.0), 1)
-    wit_w_temp = round(random.uniform(45.0, 80.0), 1)
-
-    u_n = round(random.uniform(215.0, 235.0), 1)
-    v_n = round(random.uniform(215.0, 235.0), 1)
-    w_n = round(random.uniform(215.0, 235.0), 1)
-
-    u_v = round(u_n + v_n, 1)
-    v_w = round(v_n + w_n, 1)
-    u_w = round(u_n + w_n, 1)
-
-    i_u = round(random.uniform(10.0, 50.0), 2)
-    i_v = round(random.uniform(10.0, 50.0), 2)
-    i_w = round(random.uniform(10.0, 50.0), 2)
-    i_avg = round((i_u + i_v + i_w) / 3.0, 2)
-
-    values = {
-        "Oil Level": round(random.uniform(20.0, 100.0), 1),
-        "Oil Temperature": round(oil_temp, 2),
-        "Oil Pressure": round(oil_press, 3),
-        "Bus U Temperature": bus_u_temp,
-        "Bus V Temperature": bus_v_temp,
-        "Bus W Temperature": bus_w_temp,
-        "WIT U Temperature": wit_u_temp,
-        "WIT V Temperature": wit_v_temp,
-        "WIT W Temperature": wit_w_temp,
-        "U-N Phase Voltage": u_n,
-        "V-N Phase Voltage": v_n,
-        "W-N Phase Voltage": w_n,
-        "U-V Phase Voltage": u_v,
-        "V-W Phase Voltage": v_w,
-        "U-W Phase Voltage": u_w,
-        "U Phase Current": i_u,
-        "V Phase Current": i_v,
-        "W Phase Current": i_w,
-        "Average Current": i_avg,
-    }
+    with lcd_lock:
+        values = lcd_values.copy()
 
     return {
         "updated_at": time.time(),
@@ -462,15 +513,15 @@ def main():
     print("=== TMU Modbus Gateway ===")
     host, serial_cfg, port_slave_map = load_config("config.json")
 
-    threading.Thread(target=gui_data_publisher, daemon=True).start()
-    start_gui_process()
     bus = SerialBus(serial_cfg)
+    threading.Thread(target=gui_data_publisher, daemon=True).start()
+    threading.Thread(target=lcd_data_worker, args=(bus,), daemon=True).start()
     
     adc_handler_started = False
-    initOled()
+    oled_init()
     
     textFormat = "\n       ".join([f"{k} -> {v}" for k, v in global_port_map.items()])
-    showOled(f"""\
+    oled_print(f"""\
 	 TMU MODBUS GATEWAY 
 	IP   : 192.168.4.200
 	PORT : {textFormat}
@@ -492,6 +543,8 @@ def main():
             except ValueError:
                 logging.error(f"Invalid target '{target}' for port {port}. Must be 'ADC' or integer Slave ID")
                 print(f"[ERROR] Invalid target '{target}' for port {port}. Must be 'ADC' or integer SLave ID")
+
+    start_gui_process()
 
     try:
         threading.Event().wait()

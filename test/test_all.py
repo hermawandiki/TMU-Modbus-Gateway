@@ -6,6 +6,15 @@ import RPi.GPIO as GPIO
 import smbus2
 from PIL import Image, ImageDraw, ImageFont
 
+class option(Enum):
+	TEST_GPIO = '1'
+	TEST_ADC = '2'
+	TEST_SERIAL = '3'
+	TEST_OLED = '4'
+	
+loop = True
+pilihan = option.TEST_OLED
+
 I2C_BUS = 1
 I2C_ADDR = 0x3C
 bus = smbus2.SMBus(I2C_BUS)
@@ -30,16 +39,6 @@ outStat = {
     'Solenoid' : False,
     'Spare' : False
 }
-
-class option(Enum):
-	TEST_GPIO = '1'
-	TEST_ADC = '2'
-	TEST_SERIAL = '3'
-	TEST_OLED = '4'
-	
-loop = True
-pilihan = option.TEST_OLED
-
 
 def adc_test():
 	reserved0 		= adc.read_adc(0, gain=2)
