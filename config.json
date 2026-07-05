@@ -9,13 +9,21 @@
         "timeout": 1.0
     },
     "port_slave_map": {
-        "5040": "ADC",
-        "5020": 10,
-        "5030": 2
+        "5030": "ADC",
+        "5010": 10,
+        "5020": 2
     },
     "settings_auth": {
-        "salt": "2ca5da9ee0a9c3b28a48488c7b6e9ce0",
-        "password_hash": "37e2fba26c4fef2bbf6adb372c6953808d47e365efd1fbc41f370104e9f17e49",
+        "salt": "cbdfde7977b14478cb56afb91634c9a2",
+        "password_hash": "1ee0354909caf6ee9d368cf1b9dbc5b62f832514d38570323bdb277dae87f1d5",
         "iterations": 200000
-    }
+    },
+    "lcd_visible_items": [
+        "eDMCR Oil Level",
+        "eDMCR Oil Temperature",
+        "eDMCR Oil Pressure",
+        "U-N Phase Voltage",
+        "V-N Phase Voltage",
+        "W-N Phase Voltage"
+    ]
 }
