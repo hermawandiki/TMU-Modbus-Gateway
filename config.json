@@ -12,5 +12,10 @@
         "5040": "ADC",
         "5020": 10,
         "5030": 2
+    },
+    "settings_auth": {
+        "salt": "2ca5da9ee0a9c3b28a48488c7b6e9ce0",
+        "password_hash": "37e2fba26c4fef2bbf6adb372c6953808d47e365efd1fbc41f370104e9f17e49",
+        "iterations": 200000
     }
 }
