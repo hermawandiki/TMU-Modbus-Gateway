@@ -10,9 +10,16 @@ import os
 import logging
 import Adafruit_ADS1x15
 import smbus2
+import RPi.GPIO as GPIO
 from PIL import Image, ImageDraw, ImageFont
 
 adc = Adafruit_ADS1x15.ADS1115(address=0x48, busnum=1)
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(13, GPIO.IN)
+GPIO.setup(22, GPIO.IN)
+GPIO.setup(17, GPIO.IN)
+GPIO.setup(27, GPIO.IN)
 
 adc_channels = 4
 adc_registers = [0] * adc_channels
@@ -155,20 +162,33 @@ def adc_handler():
             analogIn3 = adc.read_adc(3, gain=2)
             analogIn2 = adc.read_adc(2, gain=2)
             
+            # pakai ini kalau transmitter mode minus
+            # oil_temp = round(((analogIn3 * 0.009573) - 112.5), 3) if analogIn3 >= 0 else 0 
+            # pakai ini kalau transmitter mode plus
             oil_temp = round(((analogIn3 * 0.007630) - 50), 3)
             oil_press = (analogIn2 - 6553) / 26214
 
-            oil_temp_m = int(oil_temp * 100) if oil_temp >= 0 else 0
-            oil_press_m = int(oil_press * 10000) if oil_press >= 0 else 0
+            oil_temp_m = int(oil_temp * 100)
+            oil_press_m = int(oil_press * 10000)
+
+            oil_level_alarm = 1 if adc.read_adc(1, gain=2) > 25000 else 0
+            oil_level_trip  = 1 if adc.read_adc(0, gain=2) > 25000 else 0
+            if (oil_level_alarm and oil_level_trip) or oil_level_trip:
+                oil_level = 1
+            elif oil_level_alarm:
+                oil_level = 2
+            elif not oil_level_alarm and not oil_level_trip:
+                oil_level = 3
 
             with lcd_lock:
-                lcd_values[0] = 0.00    # Oil Level Status
+                lcd_values[0] = oil_level    # Oil Level Status
                 lcd_values[1] = round(oil_temp_m / 100, 2) # Oil Temperature
                 lcd_values[2] = round(oil_press_m / 10000, 3) # Oil Pressure
 
             with adc_lock:
-                adc_registers[0] = oil_temp_m
-                adc_registers[1] = oil_press_m
+                adc_registers[0] = oil_level
+                adc_registers[1] = oil_temp_m
+                adc_registers[2] = oil_press_m
             time.sleep(0.05)
         except Exception as e:
             logging.error(f"ADC Handler error: {e}")
@@ -217,11 +237,6 @@ def lcd_data_worker(bus: "SerialBus"):
                         lcd_values[20] = round(registers[8] / 1000.0, 3) # W Phase Current
                         lcd_values[21] = round((lcd_values[18] + lcd_values[19] + lcd_values[20]) / 3.0, 2) # Average Current
                     elif slave_id == 10 and start_addr == 0x1300:
-                        status = registers[0]
-                        # lcd_values[] = int(status & 0x01) # Oil Level Status
-                        # lcd_values[] = int((status >> 1) & 0x01) # Oil Pressure Status
-                        # lcd_values[] = int((status >> 2) & 0x01) # Alarm Oil Temp
-                        # lcd_values[] = int((status >> 3) & 0x01) # Trip Oil Temp
                         lcd_values[3] = registers[4] * 25.0 # Oil Level Measurement
                         lcd_values[4] = registers[2] / 10.0 # Oil Temperature Measurement
                         lcd_values[5] = registers[1] / 1000.0 if registers[1] >= 0 and registers[1] < 65535 else 0.00 # Oil Pressure Measurement
@@ -384,11 +399,6 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
                         registers = struct.unpack(f">{qty}H", payload)
                         with lcd_lock:
                             if start_addr == 0x1300 and qty >= 5:
-                                status = registers[0]
-                                # lcd_values[] = int(status & 0x01) # Oil Level Status
-                                # lcd_values[] = int((status >> 1) & 0x01) # Oil Pressure Status
-                                # lcd_values[] = int((status >> 2) & 0x01) # Alarm Oil Temp
-                                # lcd_values[] = int((status >> 3) & 0x01) # Trip Oil Temp
                                 lcd_values[3] = registers[4] * 25.0 # Oil Level Measurement
                                 lcd_values[4] = registers[2] / 10.0 # Oil Temperature Measurement
                                 lcd_values[5] = registers[1] / 1000.0 if registers[1] >= 0 and registers[1] < 65535 else 0.00 # Oil Pressure Measurement
@@ -523,7 +533,7 @@ def main():
     textFormat = "\n       ".join([f"{k} -> {v}" for k, v in global_port_map.items()])
     oled_print(f"""\
 	 TMU MODBUS GATEWAY 
-	IP   : 192.168.4.200
+	ETH  : 192.168.4.200
 	PORT : {textFormat}
 	""")
 

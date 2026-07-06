@@ -19,11 +19,21 @@
         "iterations": 200000
     },
     "lcd_visible_items": [
+        "TSU Oil Level",
+        "TSU Oil Temperature",
+        "TSU Oil Pressure",
         "eDMCR Oil Level",
         "eDMCR Oil Temperature",
         "eDMCR Oil Pressure",
         "U-N Phase Voltage",
         "V-N Phase Voltage",
-        "W-N Phase Voltage"
+        "W-N Phase Voltage",
+        "U-V Phase Voltage",
+        "V-W Phase Voltage",
+        "U-W Phase Voltage",
+        "U Phase Current",
+        "V Phase Current",
+        "W Phase Current",
+        "Average Current"
     ]
 }
