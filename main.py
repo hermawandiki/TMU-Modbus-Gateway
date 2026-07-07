@@ -165,8 +165,8 @@ def adc_handler():
             # pakai ini kalau transmitter mode minus
             # oil_temp = round(((analogIn3 * 0.009573) - 112.5), 3) if analogIn3 >= 0 else 0 
             # pakai ini kalau transmitter mode plus
-            oil_temp = round(((analogIn3 * 0.007630) - 50), 3)
-            oil_press = (analogIn2 - 6553) / 26214
+            oil_temp = round(((analogIn3 * 0.007630) - 50), 3) if analogIn3 >= 0 else 0
+            oil_press = (analogIn2 - 6553) / 26214 if analogIn2 >= 0 else 0
 
             oil_temp_m = int(oil_temp * 100)
             oil_press_m = int(oil_press * 10000)
