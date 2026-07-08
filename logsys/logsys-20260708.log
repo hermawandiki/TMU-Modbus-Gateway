@@ -362,3 +362,161 @@
 2026-07-08 14:33:09,483 | INFO: Connected to 5020 -> Slave 2 from 192.168.4.103:64948
 2026-07-08 14:33:12,164 | INFO: Connected to ADC on port 5030 from 192.168.4.103:64949
 2026-07-08 14:33:14,124 | INFO: Connected to 5010 -> Slave 10 from 192.168.4.103:64952
+2026-07-08 16:13:20,722 | INFO: 
+
+
+
+2026-07-08 16:13:20,722 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:13:20,722 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:13:20,722 | INFO: Config loaded with OK
+2026-07-08 16:13:20,723 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:13:20,900 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:13:20,901 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:13:20,902 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:13:20,903 | INFO: GUI started (PID: 7103)
+2026-07-08 16:13:34,851 | INFO: Connected to 5020 -> Slave 2 from 192.168.4.103:53628
+2026-07-08 16:13:36,521 | INFO: Connected to ADC on port 5030 from 192.168.4.103:53629
+2026-07-08 16:32:34,601 | INFO: 
+
+
+
+2026-07-08 16:32:34,602 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:32:34,602 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:32:34,603 | INFO: Config loaded with OK
+2026-07-08 16:32:34,604 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:32:34,606 | ERROR: Excel Logger error: name 'datetime' is not defined
+2026-07-08 16:32:34,774 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:32:34,775 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:32:34,776 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:32:34,777 | INFO: GUI started (PID: 9441)
+2026-07-08 16:33:04,607 | ERROR: Excel Logger error: name 'datetime' is not defined
+2026-07-08 16:33:56,605 | INFO: 
+
+
+
+2026-07-08 16:33:56,605 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:33:56,606 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:33:56,606 | INFO: Config loaded with OK
+2026-07-08 16:33:56,608 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:33:56,610 | ERROR: Excel Logger error: name 'datetime' is not defined
+2026-07-08 16:33:56,768 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:33:56,769 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:33:56,770 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:33:56,771 | INFO: GUI started (PID: 9742)
+2026-07-08 16:34:00,200 | INFO: Gateway Stopped.
+2026-07-08 16:34:00,218 | INFO: GUI process terminated
+2026-07-08 16:35:40,568 | INFO: 
+
+
+
+2026-07-08 16:35:40,568 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:35:40,568 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:35:40,569 | INFO: Config loaded with OK
+2026-07-08 16:35:40,571 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:35:40,573 | ERROR: Excel Logger error: 'time.struct_time' object has no attribute 'strftime'
+2026-07-08 16:35:40,730 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:35:40,732 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:35:40,733 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:35:40,734 | INFO: GUI started (PID: 9992)
+2026-07-08 16:35:48,472 | INFO: Gateway Stopped.
+2026-07-08 16:35:48,489 | INFO: GUI process terminated
+2026-07-08 16:38:01,071 | INFO: 
+
+
+
+2026-07-08 16:38:01,071 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:38:01,072 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:38:01,072 | INFO: Config loaded with OK
+2026-07-08 16:38:01,073 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:38:01,077 | ERROR: Excel Logger error: 'time.struct_time' object has no attribute 'strftime'
+2026-07-08 16:38:01,235 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:38:01,236 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:38:01,237 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:38:01,239 | INFO: GUI started (PID: 10398)
+2026-07-08 16:38:04,295 | INFO: Gateway Stopped.
+2026-07-08 16:38:04,314 | INFO: GUI process terminated
+2026-07-08 16:38:36,060 | INFO: 
+
+
+
+2026-07-08 16:38:36,060 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:38:36,060 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:38:36,061 | INFO: Config loaded with OK
+2026-07-08 16:38:36,062 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:38:36,066 | ERROR: Excel Logger error: 'time.struct_time' object has no attribute 'strftime'
+2026-07-08 16:38:36,232 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:38:36,233 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:38:36,234 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:38:36,236 | INFO: GUI started (PID: 10517)
+2026-07-08 16:38:50,729 | INFO: Gateway Stopped.
+2026-07-08 16:38:50,746 | INFO: GUI process terminated
+2026-07-08 16:40:57,613 | INFO: 
+
+
+
+2026-07-08 16:40:57,613 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:40:57,614 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:40:57,615 | INFO: Config loaded with OK
+2026-07-08 16:40:57,616 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:40:57,619 | ERROR: Excel Logger error: name 'Workbook' is not defined
+2026-07-08 16:40:57,777 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:40:57,779 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:40:57,780 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:40:57,782 | INFO: GUI started (PID: 10859)
+2026-07-08 16:41:01,216 | INFO: Gateway Stopped.
+2026-07-08 16:41:01,234 | INFO: GUI process terminated
+2026-07-08 16:41:44,355 | INFO: 
+
+
+
+2026-07-08 16:41:44,355 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:41:44,356 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:41:44,357 | INFO: Config loaded with OK
+2026-07-08 16:41:44,358 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:41:44,361 | ERROR: Excel Logger error: name 'Workbook' is not defined
+2026-07-08 16:41:44,515 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:41:44,516 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:41:44,517 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:41:44,519 | INFO: GUI started (PID: 11015)
+2026-07-08 16:41:45,922 | INFO: Gateway Stopped.
+2026-07-08 16:41:45,940 | INFO: GUI process terminated
+2026-07-08 16:42:03,675 | INFO: 
+
+
+
+2026-07-08 16:42:03,676 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:42:03,676 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:42:03,677 | INFO: Config loaded with OK
+2026-07-08 16:42:03,678 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:42:03,859 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:42:03,860 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:42:03,860 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:42:03,862 | INFO: GUI started (PID: 11123)
+2026-07-08 16:42:15,041 | INFO: Gateway Stopped.
+2026-07-08 16:42:15,050 | INFO: GUI process terminated
+2026-07-08 16:47:10,813 | INFO: 
+
+
+
+2026-07-08 16:47:10,813 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:47:10,813 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:47:10,814 | INFO: Config loaded with OK
+2026-07-08 16:47:10,815 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:47:11,021 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:47:11,022 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:47:11,023 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:47:11,025 | INFO: GUI started (PID: 11832)
+2026-07-08 16:47:12,733 | INFO: Gateway Stopped.
+2026-07-08 16:47:12,754 | INFO: GUI process terminated
+2026-07-08 16:47:15,889 | INFO: 
+
+
+
+2026-07-08 16:47:15,889 | INFO: === TMU Modbus Gateway ===
+2026-07-08 16:47:15,890 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-08 16:47:15,890 | INFO: Config loaded with OK
+2026-07-08 16:47:15,891 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-08 16:47:16,096 | INFO: Ready listening on Port 5030 for ADC
+2026-07-08 16:47:16,098 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-08 16:47:16,099 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-08 16:47:16,101 | INFO: GUI started (PID: 11898)

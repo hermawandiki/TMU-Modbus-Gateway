@@ -8,6 +8,8 @@ import json
 import sys
 import os
 import logging
+import openpyxl
+from openpyxl import Workbook
 import Adafruit_ADS1x15
 import smbus2
 import RPi.GPIO as GPIO
@@ -522,6 +524,49 @@ def gui_data_publisher():
             print(f"[ERROR] GUI data publisher error: {e}")
         time.sleep(0.5)
 
+def excel_logger_worker():
+    print("[INFO ] Excel Logger Thread started...")
+    
+    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logsys")
+    os.makedirs(log_dir, exist_ok=True)
+    
+    while True:
+        try:
+            now = time.localtime()
+            file_name = f"datalog_{time.strftime('%Y_%m', now)}.xlsx"
+            file_path = os.path.join(log_dir, file_name)
+            
+            sheet_name = time.strftime("%Y-%m-%d", now)
+            timestamp = time.strftime("%H:%M:%S", now)
+            
+            with lcd_lock:
+                current_values = lcd_values.copy()
+            
+            if os.path.exists(file_path):
+                wb = openpyxl.load_workbook(file_path)
+            else:
+                wb = Workbook()
+                if "Sheet" in wb.sheetnames:
+                    wb.remove(wb["Sheet"])
+            
+            if sheet_name not in wb.sheetnames:
+                ws = wb.create_sheet(title=sheet_name)
+                headers = ["Jam"] + lcd_fields
+                ws.append(headers)
+            else:
+                ws = wb[sheet_name]
+            
+            row_data = [timestamp] + current_values
+            ws.append(row_data)
+            
+            wb.save(file_path)
+            
+        except Exception as e:
+            logging.error(f"Excel Logger error: {e}")
+            print(f"[ERROR] Excel Logger error: {e}")
+            
+        time.sleep(10)
+
 def main():
     logging.info("\n\n\n")
     logging.info("=== TMU Modbus Gateway ===")
@@ -531,6 +576,7 @@ def main():
     bus = SerialBus(serial_cfg)
     threading.Thread(target=gui_data_publisher, daemon=True).start()
     threading.Thread(target=lcd_data_worker, args=(bus,), daemon=True).start()
+    threading.Thread(target=excel_logger_worker, daemon=True).start()
     
     adc_handler_started = False
     oled_init()
