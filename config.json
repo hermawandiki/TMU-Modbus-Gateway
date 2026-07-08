@@ -6,7 +6,7 @@
         "parity": "N",
         "stopbits": 1,
         "bytesize": 8,
-        "timeout": 1.0
+        "timeout": 0.5
     },
     "port_slave_map": {
         "5030": "ADC",

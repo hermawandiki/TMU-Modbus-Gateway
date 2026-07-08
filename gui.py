@@ -71,7 +71,7 @@ class MainWindow(QWidget):
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.addWidget(self.create_main_page())
         
-        self.show()
+        self.showFullScreen()
 
     def create_main_page(self):
         widget = QWidget()
@@ -166,7 +166,7 @@ class MainWindow(QWidget):
         label_footer.setStyleSheet("font-size: 12px; color: #888888;")
         
         layout.addLayout(top_bar_layout)
-        layout.addSpacing(2)                       
+        layout.addSpacing(4)                       
         layout.addWidget(self.main_scroll_area)     
         layout.addSpacing(2)
         layout.addWidget(self.label_timestamp)       
@@ -234,7 +234,7 @@ class MainWindow(QWidget):
             elif val <= 2:
                 text, color = "ALARM", "#F57C00"
             elif val >= 3:
-                text, color = "NORMAL", "#F57C00"
+                text, color = "NORMAL", "#388E3C"
 
         if name in self.label_stat:
             self.label_stat[name].setText(text)

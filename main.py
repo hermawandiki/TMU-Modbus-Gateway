@@ -58,6 +58,9 @@ I2C_BUS = 1
 I2C_ADDR = 0x3C
 bus = smbus2.SMBus(I2C_BUS)
 
+rtu_cache = {}
+cache_lock = threading.Lock()
+
 ts = time.strftime("%Y%m%d")
 # logName = r'D:/GitHub/TMU-Modbus-Gateway/tmu_modbus_gateway/logsys/logsys-' + ts + '.log'
 logName = r'/home/pi/TMU-Modbus-Gateway/logsys/logsys-' + ts + '.log'
@@ -241,7 +244,7 @@ def lcd_data_worker(bus: "SerialBus"):
                         lcd_values[4] = registers[2] / 10.0 # Oil Temperature Measurement
                         lcd_values[5] = registers[1] / 1000.0 if registers[1] >= 0 and registers[1] < 65535 else 0.00 # Oil Pressure Measurement
 
-                time.sleep(1)
+                time.sleep(2)
         except Exception as e:
             logging.error(f"LCD worker error: {e}")
             print(f"[ERROR] LCD worker error: {e}")
@@ -329,8 +332,10 @@ class SerialBus:
                     return b""
                     
             try:
+                time.sleep(0.01)
                 self._ser.reset_input_buffer()
                 self._ser.write(request)
+                self._ser.flush()
                 
                 response = b""
                 start = time.time()
@@ -392,7 +397,7 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
                                 lcd_values[19] = round(registers[7] / 1000.0, 3) # V Phase Current 
                                 lcd_values[20] = round(registers[8] / 1000.0, 3) # W Phase Current
                                 lcd_values[21] = round((lcd_values[18] + lcd_values[19] + lcd_values[20]) / 3.0, 2) # Average Current
-                if slave_id == 10 and fc in (0x03, 0x04):
+                elif slave_id == 10 and fc in (0x03, 0x04):
                     start_addr, qty = struct.unpack(">HH", tcp_req[8:12])
                     payload = rtu_res[3:-2]
                     if len(payload) == qty * 2:
@@ -408,10 +413,10 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
             else:
                 exc = bytes([fc | 0x80, 0x0B])
                 conn.sendall(tx_id + b"\x00\x00" + struct.pack(">H", len(exc) + 1) + bytes([unit_id]) + exc)
-                # logging.error(f"Respond Timeout / CRC Invalid")
-                # print(f"[ERROR] Respond Timeout / CRC Invalid")
-                logging.error(f"{rtu_res.hex(' ')}" if rtu_res else f"Slave ID {slave_id} No Response")
-                print(f"[ERROR] {rtu_res.hex(' ')}" if rtu_res else f"[ERROR] Slave ID {slave_id} No Response")
+                # # logging.error(f"Respond Timeout / CRC Invalid")
+                # # print(f"[ERROR] Respond Timeout / CRC Invalid")
+                # logging.error(f"{rtu_res.hex(' ')}" if rtu_res else f"Slave ID {slave_id} No Response")
+                # print(f"[ERROR] {rtu_res.hex(' ')}" if rtu_res else f"[ERROR] Slave ID {slave_id} No Response")
     except ConnectionResetError:
         logging.warning(f" Connection reset by {addr[0]}:{addr[1]}")
         print(f"[WARN ] Connection reset by {addr[0]}:{addr[1]}")
@@ -503,7 +508,7 @@ def build_gui_payload() -> dict:
         values = lcd_values.copy()
 
     return {
-        "updated_at": time.time(),
+        "updated_at": time.strftime('%Y:%M:%d - %H:%M:%S', time.localtime()),
         "values": values,
     }
 
@@ -533,7 +538,7 @@ def main():
     textFormat = "\n       ".join([f"{k} -> {v}" for k, v in global_port_map.items()])
     oled_print(f"""\
 	 TMU MODBUS GATEWAY 
-	ETH  : 192.168.4.200
+	ETH  : 192.168.4.120
 	PORT : {textFormat}
 	""")
 
