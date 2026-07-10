@@ -8,6 +8,7 @@ import json
 import sys
 import os
 import logging
+import zipfile
 import openpyxl
 from openpyxl import Workbook
 import Adafruit_ADS1x15
@@ -54,6 +55,7 @@ lcd_values = [0.0] * len(lcd_fields)
 lcd_lock = threading.Lock()
 global_port_map = {}
 gui_process = None
+db_process = None
 GUI_DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gui_data.json")
 
 I2C_BUS = 1
@@ -205,7 +207,7 @@ def lcd_data_worker(bus: "SerialBus"):
     from pymodbus.register_read_message import ReadHoldingRegistersRequest
 
     framer = ModbusRtuFramer(None)
-    read_jobs = [(2, 0x0000, 9), (10, 0x1300, 5)]
+    read_jobs = [(1, 0x0000, 9), (10, 0x1300, 5)]
 
     while True:
         try:
@@ -230,7 +232,7 @@ def lcd_data_worker(bus: "SerialBus"):
                 registers = struct.unpack(f">{qty}H", payload)
 
                 with lcd_lock:
-                    if slave_id == 2 and start_addr == 0x0000:
+                    if slave_id == 1 and start_addr == 0x0000:
                         lcd_values[12] = round(registers[0] / 100.0, 2) # U-N Phase Voltage
                         lcd_values[13] = round(registers[1] / 100.0, 2) # V-N Phase Voltage
                         lcd_values[14] = round(registers[2] / 100.0, 2) # W-N Phase Voltage
@@ -382,7 +384,7 @@ def handle_client(conn: socket.socket, addr, port: int, slave_id: int, bus: Seri
             rtu_res = bus.send_and_receive(rtu_req)
 
             if rtu_res and validate_crc16(rtu_res):
-                if slave_id == 2 and fc in (0x03, 0x04):
+                if slave_id == 1 and fc in (0x03, 0x04):
                     start_addr, qty = struct.unpack(">HH", tcp_req[8:12])
                     payload = rtu_res[3:-2]
                     if len(payload) == qty * 2:
@@ -439,6 +441,50 @@ def start_listener(host: str, port: int, slave_id: int, bus: SerialBus):
     while True:
         conn, addr = server.accept()
         threading.Thread(target=handle_client, args=(conn, addr, port, slave_id, bus), daemon=True).start()
+
+def start_db_process():
+    global db_process
+    if db_process is not None and db_process.poll() is None:
+        return
+
+    db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "database.py")
+    if not os.path.exists(db_path):
+        logging.warning(f"database.py not found at {db_path}")
+        print(f"[WARN ] database.py not found at {db_path}")
+        return
+
+    try:
+        # Menjalankan database.py di background
+        db_process = subprocess.Popen([sys.executable, db_path])
+        logging.info(f"Database logger started (PID: {db_process.pid})")
+        print(f"[INFO ] Database logger started (PID: {db_process.pid})")
+    except Exception as e:
+        logging.error(f"Failed to start Database logger: {e}")
+        print(f"[ERROR] Failed to start Database logger: {e}")
+
+def stop_db_process():
+    global db_process
+    if db_process is None:
+        return
+    if db_process.poll() is not None:
+        db_process = None
+        return
+
+    try:
+        db_process.terminate()
+        db_process.wait(timeout=3)
+        logging.info("Database process terminated")
+        print("[INFO ] Database process terminated")
+    except Exception:
+        try:
+            db_process.kill()
+            logging.warning("Database process killed")
+            print("[WARN ] Database process killed")
+        except Exception as e:
+            logging.error(f"Failed to stop Database process: {e}")
+            print(f"[ERROR] Failed to stop Database process: {e}")
+    finally:
+        db_process = None
 
 def start_gui_process():
     global gui_process
@@ -543,7 +589,17 @@ def excel_logger_worker():
                 current_values = lcd_values.copy()
             
             if os.path.exists(file_path):
-                wb = openpyxl.load_workbook(file_path)
+                try:
+                    wb = openpyxl.load_workbook(file_path)
+                except zipfile.BadZipFile:
+                    backup_name = file_path + ".corrupt"
+                    os.rename(file_path, backup_name)
+                    logging.warning(f"File {file_name} rusak dan di-rename. Membuat file Excel baru.")
+                    print(f"[WARN ] File {file_name} rusak. Membuat file Excel baru.")
+
+                    wb = Workbook()
+                    if "Sheet" in wb.sheetnames:
+                        wb.remove(wb["Sheet"])
             else:
                 wb = Workbook()
                 if "Sheet" in wb.sheetnames:
@@ -606,6 +662,7 @@ def main():
                 print(f"[ERROR] Invalid target '{target}' for port {port}. Must be 'ADC' or integer SLave ID")
 
     start_gui_process()
+    start_db_process()
 
     try:
         threading.Event().wait()
@@ -614,6 +671,7 @@ def main():
         print(f"[INFO ] Gateway Stopped.\n\n")
     finally:
         stop_gui_process()
+        stop_db_process()
 
 if __name__ == "__main__":
     main()

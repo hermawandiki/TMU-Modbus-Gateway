@@ -1,0 +1,442 @@
+2026-07-10 10:45:41,506 | INFO: 
+
+
+
+2026-07-10 10:45:41,506 | INFO: === TMU Modbus Gateway ===
+2026-07-10 10:45:41,506 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 10:45:41,507 | INFO: Config loaded with OK
+2026-07-10 10:45:41,508 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 10:45:41,514 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:45:41,728 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 10:45:41,731 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 10:45:41,734 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 10:45:41,744 | INFO: GUI started (PID: 16568)
+2026-07-10 10:45:41,748 | INFO: Database logger started (PID: 16569)
+2026-07-10 10:45:51,517 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:46:01,520 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:46:11,524 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:46:21,527 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:46:31,528 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:46:41,530 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:46:51,535 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:47:01,540 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:47:11,545 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:47:21,552 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:47:31,556 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:47:41,560 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:47:51,561 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:48:01,565 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:48:11,566 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:48:21,572 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:48:31,574 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:48:41,576 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:48:51,582 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:49:01,589 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:49:11,592 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:49:21,594 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:49:31,596 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:49:41,598 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:49:51,604 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:50:01,617 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:50:11,626 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:50:21,627 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:50:31,630 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:50:41,632 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:50:51,636 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:51:01,639 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:51:11,642 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:51:21,646 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:51:31,652 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:51:41,653 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:51:51,656 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:52:01,660 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:52:11,664 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:52:21,667 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:52:31,672 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:52:41,676 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:52:51,679 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:53:01,683 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:53:11,685 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:53:21,687 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:53:31,688 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:53:41,691 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:53:51,696 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:54:01,703 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:54:11,707 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:54:21,711 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:54:31,716 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:54:41,722 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:54:51,725 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:01,727 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:11,730 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:21,733 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:31,739 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:41,741 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:51,742 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:55:58,444 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:55:58,956 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:01,744 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:56:10,640 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:11,746 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:56:16,240 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:17,760 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:20,274 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:21,748 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:56:31,750 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:56:41,753 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:56:43,436 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:45,448 | ERROR: GUI data publisher error: [Errno 2] No such file or directory: '/home/pi/TMU-Modbus-Gateway/gui_data.json.tmp' -> '/home/pi/TMU-Modbus-Gateway/gui_data.json'
+2026-07-10 10:56:51,755 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:01,763 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:05,769 | INFO: Gateway Stopped.
+2026-07-10 10:57:05,789 | INFO: GUI process terminated
+2026-07-10 10:57:05,798 | INFO: Database process terminated
+2026-07-10 10:57:09,720 | INFO: 
+
+
+
+2026-07-10 10:57:09,721 | INFO: === TMU Modbus Gateway ===
+2026-07-10 10:57:09,721 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 10:57:09,722 | INFO: Config loaded with OK
+2026-07-10 10:57:09,723 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 10:57:09,730 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:09,954 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 10:57:09,956 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 10:57:09,960 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 10:57:09,964 | INFO: GUI started (PID: 20397)
+2026-07-10 10:57:09,968 | INFO: Database logger started (PID: 20398)
+2026-07-10 10:57:19,733 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:29,738 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:39,745 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:49,758 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:57:59,761 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:58:09,764 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:58:19,766 | ERROR: Excel Logger error: File is not a zip file
+2026-07-10 10:58:28,008 | INFO: Gateway Stopped.
+2026-07-10 10:58:28,037 | INFO: GUI process terminated
+2026-07-10 10:58:28,071 | INFO: Database process terminated
+2026-07-10 11:01:40,790 | INFO: 
+
+
+
+2026-07-10 11:01:40,791 | INFO: === TMU Modbus Gateway ===
+2026-07-10 11:01:40,791 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 11:01:40,792 | INFO: Config loaded with OK
+2026-07-10 11:01:40,793 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 11:01:40,797 | WARNING: File datalog_2026_07.xlsx rusak dan di-rename. Membuat file Excel baru.
+2026-07-10 11:01:41,002 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 11:01:41,003 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 11:01:41,005 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 11:01:41,009 | INFO: GUI started (PID: 21530)
+2026-07-10 11:01:41,012 | INFO: Database logger started (PID: 21531)
+2026-07-10 11:01:48,415 | INFO: Gateway Stopped.
+2026-07-10 11:01:48,435 | INFO: GUI process terminated
+2026-07-10 11:01:48,444 | INFO: Database process terminated
+2026-07-10 11:03:21,010 | INFO: 
+
+
+
+2026-07-10 11:03:21,010 | INFO: === TMU Modbus Gateway ===
+2026-07-10 11:03:21,011 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 11:03:21,015 | INFO: Config loaded with OK
+2026-07-10 11:03:21,016 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 11:03:21,225 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 11:03:21,226 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 11:03:21,227 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 11:03:21,229 | INFO: GUI started (PID: 21897)
+2026-07-10 11:03:21,230 | INFO: Database logger started (PID: 21898)
+2026-07-10 11:03:26,010 | INFO: Gateway Stopped.
+2026-07-10 11:03:26,030 | INFO: GUI process terminated
+2026-07-10 11:03:26,039 | INFO: Database process terminated
+2026-07-10 11:03:35,196 | INFO: 
+
+
+
+2026-07-10 11:03:35,196 | INFO: === TMU Modbus Gateway ===
+2026-07-10 11:03:35,196 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 11:03:35,197 | INFO: Config loaded with OK
+2026-07-10 11:03:35,198 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 11:03:35,413 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 11:03:35,416 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 11:03:35,418 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 11:03:35,420 | INFO: GUI started (PID: 21977)
+2026-07-10 11:03:35,422 | INFO: Database logger started (PID: 21978)
+2026-07-10 11:04:55,984 | INFO: 
+
+
+
+2026-07-10 11:04:55,985 | INFO: === TMU Modbus Gateway ===
+2026-07-10 11:04:55,985 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 11:04:55,985 | INFO: Config loaded with OK
+2026-07-10 11:04:55,987 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 11:04:56,208 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 11:04:56,210 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 11:04:56,211 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 11:04:56,214 | INFO: GUI started (PID: 22343)
+2026-07-10 11:04:56,215 | INFO: Database logger started (PID: 22345)
+2026-07-10 11:36:51,676 | INFO: 
+
+
+
+2026-07-10 11:36:51,679 | INFO: === TMU Modbus Gateway ===
+2026-07-10 11:36:51,679 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 11:36:51,683 | INFO: Config loaded with OK
+2026-07-10 11:36:51,684 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:51,927 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:51,928 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:52,292 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 11:36:52,294 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 11:36:52,295 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 11:36:52,297 | INFO: GUI started (PID: 1683)
+2026-07-10 11:36:52,299 | INFO: Database logger started (PID: 1684)
+2026-07-10 11:36:52,929 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:52,931 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:53,935 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:53,939 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:54,940 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:54,940 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:55,942 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:55,943 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:56,945 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:56,947 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:57,948 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:57,950 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:58,952 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:58,953 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:59,954 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:36:59,955 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:00,956 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:00,959 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:01,960 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:01,961 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:02,962 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:02,963 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:03,965 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:03,970 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:04,971 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:04,972 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:05,978 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:05,979 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:06,980 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:06,980 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:07,981 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:07,982 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:08,982 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 11:37:08,983 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:04:06,081 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:04:06,082 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:04:07,084 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 14:17:13,598 | INFO: 
+
+
+
+2026-07-10 14:17:13,601 | INFO: === TMU Modbus Gateway ===
+2026-07-10 14:17:13,601 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 14:17:13,605 | INFO: Config loaded with OK
+2026-07-10 14:17:13,605 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:13,901 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:13,906 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:14,410 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 14:17:14,411 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 14:17:14,412 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 14:17:14,416 | INFO: GUI started (PID: 1763)
+2026-07-10 14:17:14,421 | INFO: Database logger started (PID: 1764)
+2026-07-10 14:17:14,907 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:14,907 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:15,912 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:15,914 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:16,915 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:16,916 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:17,917 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:17,917 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:18,919 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:18,920 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:19,921 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:19,926 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:20,927 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:20,927 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:21,929 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:21,929 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:22,930 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:22,930 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:23,931 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:23,931 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:24,932 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:24,951 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:25,953 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:25,954 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:26,955 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:26,957 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:27,959 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:27,960 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:28,961 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:28,962 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:29,963 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:29,963 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:30,969 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:30,971 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:31,972 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:17:31,973 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:34:41,066 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 14:58:16,414 | INFO: 
+
+
+
+2026-07-10 14:58:16,422 | INFO: === TMU Modbus Gateway ===
+2026-07-10 14:58:16,423 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 14:58:16,428 | INFO: Config loaded with OK
+2026-07-10 14:58:16,428 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:16,640 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:16,646 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:17,477 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 14:58:17,498 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 14:58:17,501 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 14:58:17,503 | INFO: GUI started (PID: 1741)
+2026-07-10 14:58:17,504 | INFO: Database logger started (PID: 1742)
+2026-07-10 14:58:17,647 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:17,648 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:18,652 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:18,653 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:19,654 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:19,655 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:20,656 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:20,657 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:21,659 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:21,659 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:22,660 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:22,661 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:23,662 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:23,663 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:24,665 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:24,666 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:25,667 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:25,667 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:26,669 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:26,669 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:27,678 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:27,705 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:28,718 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:28,719 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:29,720 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:29,721 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:30,722 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:30,722 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:31,723 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:31,724 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:32,725 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:32,725 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:33,727 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:33,729 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:34,732 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:34,734 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 14:58:35,736 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 16:09:14,543 | INFO: 
+
+
+
+2026-07-10 16:09:14,555 | INFO: === TMU Modbus Gateway ===
+2026-07-10 16:09:14,555 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 16:09:14,558 | INFO: Config loaded with OK
+2026-07-10 16:09:14,559 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:14,784 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:14,804 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:15,495 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 16:09:15,523 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 16:09:15,545 | INFO: Ready listening on Port 5020 for Slave ID 2
+2026-07-10 16:09:15,563 | INFO: GUI started (PID: 1779)
+2026-07-10 16:09:15,584 | INFO: Database logger started (PID: 1780)
+2026-07-10 16:09:15,808 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:15,809 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:16,810 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:16,811 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:17,814 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:17,815 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:18,817 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:18,817 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:19,818 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:19,820 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:20,823 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:20,824 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:21,825 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:21,826 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:22,827 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:22,828 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:23,832 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:23,836 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:24,838 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:24,839 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:25,840 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:25,842 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:26,842 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:26,843 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:27,863 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:27,864 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:28,865 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:28,866 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:29,869 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:29,870 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:30,872 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:30,873 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:31,876 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:31,877 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:32,879 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:09:32,884 | ERROR: Failed to open serial: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
+2026-07-10 16:11:01,071 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 16:51:42,834 | INFO: Connected to ADC on port 5030 from 192.168.4.100:63943
+2026-07-10 16:52:05,270 | WARNING:  Connection reset by 192.168.4.100:63943
+2026-07-10 16:52:05,272 | INFO: Disconnected ADC Port 5030 from 192.168.4.100:63943
+2026-07-10 17:02:59,776 | INFO: 
+
+
+
+2026-07-10 17:02:59,777 | INFO: === TMU Modbus Gateway ===
+2026-07-10 17:02:59,777 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 17:02:59,778 | INFO: Config loaded with OK
+2026-07-10 17:02:59,780 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 17:03:00,955 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 17:03:00,961 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 17:03:00,964 | INFO: Ready listening on Port 5020 for Slave ID 1
+2026-07-10 17:03:00,967 | INFO: GUI started (PID: 7682)
+2026-07-10 17:03:00,973 | INFO: Database logger started (PID: 7683)
+2026-07-10 17:03:53,269 | INFO: 
+
+
+
+2026-07-10 17:03:53,270 | INFO: === TMU Modbus Gateway ===
+2026-07-10 17:03:53,270 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 17:03:53,271 | INFO: Config loaded with OK
+2026-07-10 17:03:53,272 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 17:03:54,386 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 17:03:54,414 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 17:03:54,431 | INFO: Ready listening on Port 5020 for Slave ID 1
+2026-07-10 17:03:54,456 | INFO: GUI started (PID: 7843)
+2026-07-10 17:03:54,457 | INFO: Database logger started (PID: 7844)
+2026-07-10 17:04:08,379 | INFO: Gateway Stopped.
+2026-07-10 17:04:08,399 | INFO: GUI process terminated
+2026-07-10 17:04:08,406 | INFO: Database process terminated
+2026-07-10 17:06:02,543 | INFO: 
+
+
+
+2026-07-10 17:06:02,544 | INFO: === TMU Modbus Gateway ===
+2026-07-10 17:06:02,544 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 17:06:02,544 | INFO: Config loaded with OK
+2026-07-10 17:06:02,545 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 17:06:03,422 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 17:06:03,460 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 17:06:03,471 | INFO: Ready listening on Port 5020 for Slave ID 1
+2026-07-10 17:06:03,504 | INFO: GUI started (PID: 8176)
+2026-07-10 17:06:03,531 | INFO: Database logger started (PID: 8177)
+2026-07-10 17:13:01,511 | INFO: 
+
+
+
+2026-07-10 17:13:01,512 | INFO: === TMU Modbus Gateway ===
+2026-07-10 17:13:01,512 | INFO: Loading config from: /home/pi/TMU-Modbus-Gateway/config.json
+2026-07-10 17:13:01,513 | INFO: Config loaded with OK
+2026-07-10 17:13:01,514 | INFO: Connected to /dev/ttyACM0 at 9600
+2026-07-10 17:13:02,534 | INFO: Ready listening on Port 5030 for ADC
+2026-07-10 17:13:02,562 | INFO: Ready listening on Port 5010 for Slave ID 10
+2026-07-10 17:13:02,589 | INFO: Ready listening on Port 5020 for Slave ID 1
+2026-07-10 17:13:02,638 | INFO: GUI started (PID: 8988)
+2026-07-10 17:13:02,641 | INFO: Database logger started (PID: 8989)

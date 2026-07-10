@@ -286,5 +286,6 @@ class MainWindow(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setApplicationName("TMU Dashboard")
     window = MainWindow()
     sys.exit(app.exec())

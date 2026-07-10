@@ -11,7 +11,7 @@
     "port_slave_map": {
         "5030": "ADC",
         "5010": 10,
-        "5020": 2
+        "5020": 1
     },
     "settings_auth": {
         "salt": "cbdfde7977b14478cb56afb91634c9a2",
