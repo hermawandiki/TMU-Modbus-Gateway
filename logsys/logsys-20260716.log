@@ -1,0 +1,300 @@
+2026-07-16 15:46:02,946 | INFO: Restarting all modules...
+2026-07-16 15:46:03,950 | INFO: GUI Dashboard (PyQt) started (PID: 36515)
+2026-07-16 15:46:03,953 | INFO: Database (InfluxDB) started (PID: 36516)
+2026-07-16 15:46:28,963 | INFO: Database (InfluxDB) started (PID: 36554)
+2026-07-16 15:46:30,974 | INFO: Database (InfluxDB) started (PID: 36560)
+2026-07-16 15:46:31,741 | INFO: Database (InfluxDB) started (PID: 36561)
+2026-07-16 15:46:31,991 | INFO: Database (InfluxDB) started (PID: 36562)
+2026-07-16 15:46:32,221 | INFO: Database (InfluxDB) started (PID: 36563)
+2026-07-16 15:46:32,508 | INFO: Database (InfluxDB) started (PID: 36564)
+2026-07-16 15:46:32,711 | INFO: Database (InfluxDB) started (PID: 36565)
+2026-07-16 15:46:33,365 | INFO: Restarting all modules...
+2026-07-16 15:46:33,382 | INFO: GUI Dashboard (PyQt) stopped.
+2026-07-16 15:46:34,384 | INFO: GUI Dashboard (PyQt) started (PID: 36577)
+2026-07-16 15:46:34,386 | INFO: Database (InfluxDB) started (PID: 36578)
+2026-07-16 15:46:49,966 | INFO: GUI Dashboard (PyQt) stopped.
+2026-07-16 15:49:23,892 | INFO: Restarting all modules...
+2026-07-16 15:49:24,897 | INFO: GUI Dashboard (PyQt) started (PID: 36816)
+2026-07-16 15:49:24,898 | INFO: Database (InfluxDB) started (PID: 36817)
+2026-07-16 15:55:11,757 | INFO: GUI Dashboard (PyQt) started (PID: 37285)
+2026-07-16 15:55:11,759 | INFO: Database (InfluxDB) started (PID: 37286)
+2026-07-16 15:55:27,886 | INFO: GUI Dashboard (PyQt) started (PID: 37320)
+2026-07-16 15:55:36,709 | INFO: Database (InfluxDB) started (PID: 37342)
+2026-07-16 15:55:39,138 | INFO: Database (InfluxDB) started (PID: 37343)
+2026-07-16 15:55:49,169 | INFO: GUI Dashboard (PyQt) stopped.
+2026-07-16 15:55:52,836 | INFO: Restarting all modules...
+2026-07-16 15:55:53,840 | INFO: GUI Dashboard (PyQt) started (PID: 37370)
+2026-07-16 15:55:53,842 | INFO: Database (InfluxDB) started (PID: 37371)
+2026-07-16 15:57:45,956 | INFO: GUI Dashboard (PyQt) started (PID: 37536)
+2026-07-16 15:57:45,957 | INFO: Database (InfluxDB) started (PID: 37537)
+2026-07-16 16:05:23,670 | INFO: GUI Dashboard (PyQt) started (PID: 38134)
+2026-07-16 16:05:23,672 | INFO: Database (InfluxDB) started (PID: 38135)
+2026-07-16 16:05:47,254 | INFO: GUI Dashboard (PyQt) stopped.
+2026-07-16 16:10:43,674 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:10:43,837 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:10:43,838 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:10:43,839 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:10:43,840 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:10:43,840 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:10:43,846 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:10:43,853 | INFO: GUI Dashboard started.
+2026-07-16 16:11:08,681 | INFO: GUI Dashboard started.
+2026-07-16 16:11:14,365 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:11:19,959 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:11:20,108 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:13:07,197 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:13:20,017 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:13:20,018 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:13:20,020 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:13:20,021 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:14:23,060 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:14:23,061 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:14:23,061 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:14:32,437 | INFO: GUI Dashboard started.
+2026-07-16 16:14:41,124 | INFO: GUI Dashboard started.
+2026-07-16 16:14:48,902 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:14:50,595 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:14:50,597 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:14:50,599 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:14:50,601 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:14:52,040 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:14:52,189 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:14:58,359 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:14:58,361 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:14:58,363 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:16:00,472 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:16:00,632 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:16:00,633 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:16:00,633 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:16:00,634 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:16:00,635 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:16:00,641 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:16:00,643 | INFO: GUI Dashboard started.
+2026-07-16 16:17:39,562 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:17:39,566 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:17:39,566 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:17:40,586 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:17:40,708 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:17:40,709 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:17:40,710 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:17:40,710 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:17:40,711 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:17:40,715 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:17:40,716 | INFO: GUI Dashboard started.
+2026-07-16 16:18:02,776 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:18:02,776 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:18:02,776 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:18:16,545 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:18:16,707 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:18:16,708 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:18:16,709 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:18:16,709 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:18:16,710 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:18:16,716 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:18:16,718 | INFO: GUI Dashboard started.
+2026-07-16 16:22:18,410 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:22:18,414 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:22:18,415 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:22:19,442 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:22:19,569 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:22:19,570 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:22:19,571 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:22:19,571 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:22:19,572 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:22:19,576 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:22:19,579 | INFO: GUI Dashboard started.
+2026-07-16 16:22:26,562 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:22:26,562 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:22:26,562 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:26:03,946 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:26:04,112 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:26:04,113 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:26:04,115 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:26:04,115 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:26:04,116 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:26:04,123 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:26:04,127 | INFO: GUI Dashboard started.
+2026-07-16 16:26:30,109 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:26:30,110 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:26:30,110 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:27:44,999 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:27:45,163 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:27:45,164 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:27:45,165 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:27:45,165 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:27:45,166 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:27:45,172 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:27:45,173 | INFO: GUI Dashboard started.
+2026-07-16 16:27:54,001 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:27:54,003 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:27:54,006 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:28:48,495 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:28:48,670 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:28:48,671 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:28:48,672 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:28:48,673 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:28:48,674 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:28:48,680 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:28:48,681 | INFO: GUI Dashboard started.
+2026-07-16 16:28:53,887 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:28:53,887 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:28:53,887 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:29:12,773 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:29:12,936 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:29:12,937 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:29:12,937 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:29:12,938 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:29:12,939 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:29:12,945 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:29:12,947 | INFO: GUI Dashboard started.
+2026-07-16 16:29:37,745 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:29:38,017 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 16:29:38,019 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:29:38,020 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:29:38,021 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:29:38,023 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 16:29:38,034 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 16:29:38,041 | INFO: GUI Dashboard started.
+2026-07-16 16:29:42,396 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 16:29:42,400 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 16:29:42,402 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 16:33:17,454 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:33:17,622 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:33:17,623 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:33:17,624 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:33:17,624 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:33:17,625 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:33:17,631 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:33:17,633 | INFO: GUI Dashboard started.
+2026-07-16 16:33:24,669 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:33:24,669 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:33:24,670 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:34:16,948 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:34:17,106 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:34:17,107 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:34:17,108 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:34:17,108 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:34:17,109 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:34:17,115 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:34:17,119 | INFO: GUI Dashboard started.
+2026-07-16 16:34:26,407 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:34:26,408 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:34:26,408 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:34:28,778 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:34:28,898 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:34:28,898 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:34:28,899 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:34:28,899 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:34:28,900 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:34:28,904 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:34:28,906 | INFO: GUI Dashboard started.
+2026-07-16 16:34:32,457 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:34:32,458 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:34:32,459 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:34:33,486 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:34:33,606 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:34:33,607 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:34:33,607 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:34:33,608 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:34:33,608 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:34:33,613 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:34:33,616 | INFO: GUI Dashboard started.
+2026-07-16 16:34:48,753 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:34:48,754 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:34:48,754 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:48:43,428 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:48:43,732 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:48:43,733 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:48:43,735 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:48:43,736 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:48:43,738 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:48:43,746 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:48:43,748 | INFO: GUI Dashboard started.
+2026-07-16 16:49:26,483 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:49:26,488 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:49:26,489 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:49:56,163 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:49:56,301 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:49:56,303 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:49:56,303 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:49:56,304 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:49:56,305 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:49:56,312 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:49:56,314 | INFO: GUI Dashboard started.
+2026-07-16 16:50:01,512 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:50:01,515 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:50:01,516 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:50:23,904 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:50:24,066 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:50:24,067 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:50:24,068 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:50:24,069 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:50:24,069 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:50:24,075 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:50:24,076 | INFO: GUI Dashboard started.
+2026-07-16 16:50:36,762 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:50:36,763 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:50:36,764 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:52:17,608 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:52:17,772 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:52:17,773 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:52:17,773 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:52:17,774 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:52:17,775 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:52:17,781 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:52:17,783 | INFO: GUI Dashboard started.
+2026-07-16 16:52:25,450 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:52:25,450 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:52:25,450 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:55:27,030 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:55:27,192 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:55:27,193 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:55:27,194 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:55:27,195 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:55:27,196 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:55:27,202 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:55:27,204 | INFO: GUI Dashboard started.
+2026-07-16 16:55:34,131 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:55:34,132 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:55:34,132 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 16:58:13,790 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 16:58:13,941 | INFO: Subprocess Data Handler Started.
+2026-07-16 16:58:13,941 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 16:58:13,942 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 16:58:13,943 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 16:58:13,945 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 16:58:13,951 | INFO: Subprocess DB & Logger Started.
+2026-07-16 16:58:13,953 | INFO: GUI Dashboard started.
+2026-07-16 16:58:24,844 | INFO: Subprocess Data Handler stopped.
+2026-07-16 16:58:24,846 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 16:58:24,847 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 17:00:26,519 | INFO: RS485 Connected: /dev/ttyACM0
+2026-07-16 17:00:26,697 | INFO: Subprocess Data Handler Started.
+2026-07-16 17:00:26,698 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 17:00:26,699 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 17:00:26,699 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 17:00:26,700 | INFO: Subprocess Modbus Gateway Started.
+2026-07-16 17:00:26,706 | INFO: Subprocess DB & Logger Started.
+2026-07-16 17:00:26,707 | INFO: GUI Dashboard started.
+2026-07-16 17:00:46,174 | INFO: Subprocess Data Handler stopped.
+2026-07-16 17:00:46,175 | INFO: Subprocess Modbus Gateway stopped.
+2026-07-16 17:00:46,176 | INFO: Subprocess DB & Logger stopped.
+2026-07-16 17:04:28,873 | WARNING: === SYSTEM RUNNING IN DUMMY MODE ===
+2026-07-16 17:04:29,157 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 17:04:29,158 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 17:04:29,159 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 17:04:29,160 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 17:04:29,161 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 17:04:29,166 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 17:04:29,167 | INFO: GUI Dashboard started.
+2026-07-16 17:06:47,680 | INFO: Modul Data Handler (I/O & IPC) dihentikan.
+2026-07-16 17:06:47,684 | INFO: Modul Modbus TCP Gateway dihentikan.
+2026-07-16 17:06:47,685 | INFO: Modul DB & Excel Logger dihentikan.
+2026-07-16 17:09:56,584 | WARNING: === SYSTEM RUNNING IN DUMMY MODE ===
+2026-07-16 17:09:56,890 | INFO: Modul Data Handler (I/O & IPC) dimulai.
+2026-07-16 17:09:56,891 | INFO: Gateway Listening on Port 5030 -> ADC
+2026-07-16 17:09:56,892 | INFO: Gateway Listening on Port 5010 -> 10
+2026-07-16 17:09:56,893 | INFO: Gateway Listening on Port 5020 -> 1
+2026-07-16 17:09:56,894 | INFO: Modul Modbus TCP Gateway dimulai.
+2026-07-16 17:09:56,899 | INFO: Modul DB & Excel Logger dimulai.
+2026-07-16 17:09:56,902 | INFO: GUI Dashboard started.

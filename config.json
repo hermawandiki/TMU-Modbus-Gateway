@@ -1,5 +1,6 @@
 {
     "host": "0.0.0.0",
+    "dummy_mode": true,
     "serial_port": {
         "port": "/dev/ttyACM0",
         "baudrate": 9600,
@@ -12,6 +13,17 @@
         "5030": "ADC",
         "5010": 10,
         "5020": 1
+    },
+    "influx_db": {
+        "host": "localhost",
+        "port": 8086,
+        "database": "all_sensor_data",
+        "username": "",
+        "password": ""
+    },
+    "logging": {
+        "excel_interval_seconds": 10,
+        "influx_interval_seconds": 2
     },
     "settings_auth": {
         "salt": "cbdfde7977b14478cb56afb91634c9a2",
@@ -37,9 +49,6 @@
         "U-V Phase Voltage",
         "V-W Phase Voltage",
         "U-W Phase Voltage",
-        "U Phase Current",
-        "V Phase Current",
-        "W Phase Current",
-        "Average Current"
+        "U Phase Current", "V Phase Current", "W Phase Current", "Average Current"
     ]
 }
