@@ -84,11 +84,11 @@ def restart_gui_subproc(): stop_gui_subproc(); time.sleep(0.5); start_gui_subpro
 
 class ControlPanel:
     def __init__(self, root):
-        self.root = root; self.root.title("TMU Gateway - Control Panel"); self.root.geometry("780x420"); self.root.configure(bg="#2C3E50"); self.root.resizable(False, False)
+        self.root = root; self.root.title("TMU Gateway - Control Panel"); self.root.geometry("700x420"); self.root.configure(bg="#2C3E50"); self.root.resizable(False, False)
         tk.Label(root, text="TMU MODBUS GATEWAY CONTROL PANEL", font=("Helvetica", 16, "bold"), bg="#2C3E50", fg="#ECF0F1").pack(pady=10)
         self.frame_t = tk.Frame(root, bg="#34495E", bd=2, relief=tk.GROOVE); self.frame_t.pack(padx=15, pady=5, fill=tk.BOTH, expand=True)
         
-        for col, (h, w) in enumerate(zip(["Subprocess", "Status", "Last Heartbeat", "   Start  |  Stop  |  Restart   )"], [22, 10, 22, 26])):
+        for col, (h, w) in enumerate(zip(["Subprocess", "Status", "Last Heartbeat", "   Start   |   Stop   |   Restart   "], [22, 10, 22, 26])):
             tk.Label(self.frame_t, text=h, font=("Helvetica", 11, "bold"), bg="#1ABC9C", fg="white", width=w, pady=6).grid(row=0, column=col, padx=1, pady=1)
 
         self.rows = {}; self.mods_cfg = [
