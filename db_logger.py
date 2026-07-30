@@ -7,7 +7,6 @@ from openpyxl import Workbook
 from influxdb import InfluxDBClient
 from data_handler import lcd_lock, lcd_values, lcd_fields
 
-# Influx Config
 INFLUX_HOST = 'localhost'; INFLUX_PORT = 8086; INFLUX_DB = 'all_sensor_data'
 INFLUX_USER = ''; INFLUX_PASS = ''
 

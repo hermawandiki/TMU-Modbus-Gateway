@@ -85,7 +85,6 @@ class MainWindow(QWidget):
         label_header.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label_header.setStyleSheet("font-size: 20px; font-weight: bold; color: #333333; line-height: 1.1;")
 
-        # Tombol Minimize agar teknisi bisa mengintip layar main.py di belakangnya
         btn_minimize = QPushButton("—")
         btn_minimize.setFixedSize(40, 40)
         btn_minimize.setCursor(Qt.CursorShape.PointingHandCursor)

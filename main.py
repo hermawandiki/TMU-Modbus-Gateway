@@ -19,10 +19,10 @@ os.makedirs(log_dir, exist_ok=True)
 logging.basicConfig(filename=os.path.join(log_dir, f"logsys-{ts}.log"), format='%(asctime)s | %(levelname)s: %(message)s', level=logging.INFO)
 
 heartbeats = {
-    "Data Handler (I/O & IPC)": {"time": 0.0, "status": "STOPPED"},
-    "Modbus TCP Gateway": {"time": 0.0, "status": "STOPPED"},
+    "Data Handler": {"time": 0.0, "status": "STOPPED"},
+    "Modbus Gateway": {"time": 0.0, "status": "STOPPED"},
     "DB & Excel Logger": {"time": 0.0, "status": "STOPPED"},
-    "GUI Dashboard (PyQt)": {"time": 0.0, "status": "STOPPED"}
+    "GUI Dashboard": {"time": 0.0, "status": "STOPPED"}
 }
 stop_events = {}
 subprocesses = {"gui": None}
@@ -34,7 +34,7 @@ def load_config():
     cfg_path = os.path.join(BASE_DIR, "config.json")
     with open(cfg_path, "r") as f: cfg = json.load(f)
     config_data["host"] = cfg.get("host", "0.0.0.0")
-    config_data["dummy"] = cfg.get("dummy_mode", False) # Membaca saklar dummy_mode
+    config_data["dummy"] = cfg.get("dummy_mode", False)
     config_data["serial"] = cfg.get("serial_port", {})
     config_data["map"] = {int(k): v for k, v in cfg.get("port_slave_map", {}).items()}
     return config_data
@@ -49,24 +49,24 @@ def start_mod(name):
     
     is_dummy = config_data.get("dummy", False)
     
-    if name == "Data Handler (I/O & IPC)":
+    if name == "Data Handler":
         global_bus = start_data_handler_engine(config_data["serial"], is_dummy, evt, lambda t: update_hb(name, t))
         textFormat = "\n       ".join([f"{k} -> {v}" for k, v in config_data['map'].items()])
-        oled_print(f" TMU MODBUS GATEWAY \nETH  : {config_data['host']}\nPORT : {textFormat}")
-    elif name == "Modbus TCP Gateway":
+        oled_print(f" TMU MODBUS GATEWAY \nETH  : 192.168.4.120\nPORT : {textFormat}")
+    elif name == "Modbus Gateway":
         start_gateway_engine(config_data["host"], config_data["map"], global_bus, is_dummy, evt, lambda t: update_hb(name, t))
     elif name == "DB & Excel Logger":
         start_db_logger_engine(evt, lambda t: update_hb(name, t))
-    logging.info(f"Modul {name} dimulai.")
+    logging.info(f"{name} started.")
 
 def stop_mod(name):
     if name in stop_events and heartbeats[name]["status"] == "RUNNING":
-        stop_events[name].set(); heartbeats[name]["status"] = "STOPPED"; logging.info(f"Modul {name} dihentikan.")
+        stop_events[name].set(); heartbeats[name]["status"] = "STOPPED"; logging.info(f"{name} stopped.")
 
 def restart_mod(name): stop_mod(name); time.sleep(0.5); start_mod(name)
 
 def start_gui_subproc():
-    name = "GUI Dashboard (PyQt)"
+    name = "GUI Dashboard"
     if subprocesses["gui"] is None or subprocesses["gui"].poll() is not None:
         script = os.path.join(BASE_DIR, "gui.py")
         subprocesses["gui"] = subprocess.Popen([sys.executable, script])
@@ -74,7 +74,7 @@ def start_gui_subproc():
         logging.info("GUI Dashboard started.")
 
 def stop_gui_subproc():
-    name = "GUI Dashboard (PyQt)"; proc = subprocesses.get("gui")
+    name = "GUI Dashboard"; proc = subprocesses.get("gui")
     if proc and proc.poll() is None:
         try: proc.terminate(); proc.wait(timeout=2)
         except: proc.kill()
@@ -82,20 +82,20 @@ def stop_gui_subproc():
 
 def restart_gui_subproc(): stop_gui_subproc(); time.sleep(0.5); start_gui_subproc()
 
-class SupervisorGUI:
+class ControlPanel:
     def __init__(self, root):
-        self.root = root; self.root.title("TMU Gateway - Supervisor Panel"); self.root.geometry("780x420"); self.root.configure(bg="#2C3E50"); self.root.resizable(False, False)
-        tk.Label(root, text="TMU MODBUS GATEWAY SUPERVISOR", font=("Helvetica", 16, "bold"), bg="#2C3E50", fg="#ECF0F1").pack(pady=10)
+        self.root = root; self.root.title("TMU Gateway - Control Panel"); self.root.geometry("780x420"); self.root.configure(bg="#2C3E50"); self.root.resizable(False, False)
+        tk.Label(root, text="TMU MODBUS GATEWAY CONTROL PANEL", font=("Helvetica", 16, "bold"), bg="#2C3E50", fg="#ECF0F1").pack(pady=10)
         self.frame_t = tk.Frame(root, bg="#34495E", bd=2, relief=tk.GROOVE); self.frame_t.pack(padx=15, pady=5, fill=tk.BOTH, expand=True)
         
-        for col, (h, w) in enumerate(zip(["Modul Sistem", "Status", "Last Heartbeat (Live)", "Kontrol Aksi (Start | Stop | Restart)"], [22, 10, 22, 26])):
+        for col, (h, w) in enumerate(zip(["Subprocess", "Status", "Last Heartbeat", "   Start  |  Stop  |  Restart   )"], [22, 10, 22, 26])):
             tk.Label(self.frame_t, text=h, font=("Helvetica", 11, "bold"), bg="#1ABC9C", fg="white", width=w, pady=6).grid(row=0, column=col, padx=1, pady=1)
 
         self.rows = {}; self.mods_cfg = [
-            ("Data Handler (I/O & IPC)", lambda: start_mod("Data Handler (I/O & IPC)"), lambda: stop_mod("Data Handler (I/O & IPC)"), lambda: restart_mod("Data Handler (I/O & IPC)")),
-            ("Modbus TCP Gateway", lambda: start_mod("Modbus TCP Gateway"), lambda: stop_mod("Modbus TCP Gateway"), lambda: restart_mod("Modbus TCP Gateway")),
+            ("Data Handler", lambda: start_mod("Data Handler"), lambda: stop_mod("Data Handler"), lambda: restart_mod("Data Handler")),
+            ("Modbus Gateway", lambda: start_mod("Modbus Gateway"), lambda: stop_mod("Modbus Gateway"), lambda: restart_mod("Modbus Gateway")),
             ("DB & Excel Logger", lambda: start_mod("DB & Excel Logger"), lambda: stop_mod("DB & Excel Logger"), lambda: restart_mod("DB & Excel Logger")),
-            ("GUI Dashboard (PyQt)", start_gui_subproc, stop_gui_subproc, restart_gui_subproc)
+            ("GUI Dashboard", start_gui_subproc, stop_gui_subproc, restart_gui_subproc)
         ]
 
         for idx, (m_name, c_start, c_stop, c_res) in enumerate(self.mods_cfg, start=1):
@@ -116,26 +116,26 @@ class SupervisorGUI:
         self.update_ui_loop()
 
     def start_all(self):
-        start_mod("Data Handler (I/O & IPC)"); start_mod("Modbus TCP Gateway"); start_mod("DB & Excel Logger"); start_gui_subproc()
+        start_mod("Data Handler"); start_mod("Modbus Gateway"); start_mod("DB & Excel Logger"); start_gui_subproc()
 
     def restart_all(self): self.stop_all(); time.sleep(1); self.start_all()
     def stop_all(self):
-        for name in ["Data Handler (I/O & IPC)", "Modbus TCP Gateway", "DB & Excel Logger"]: stop_mod(name)
+        for name in ["Data Handler", "Modbus Gateway", "DB & Excel Logger"]: stop_mod(name)
         stop_gui_subproc()
 
     def exit_all(self):
-        if messagebox.askyesno("Konfirmasi", "Hentikan semua proses dan keluar?"): self.stop_all(); self.root.quit(); sys.exit(0)
+        if messagebox.askyesno("Confirmation", "Are you sure you want to stop all processes and exit?"): self.stop_all(); self.root.quit(); sys.exit(0)
 
     def update_ui_loop(self):
         now = time.time(); proc_gui = subprocesses.get("gui")
         if proc_gui and proc_gui.poll() is None:
             if os.path.exists(GUI_DATA_FILE):
-                try: heartbeats["GUI Dashboard (PyQt)"]["time"] = os.path.getmtime(GUI_DATA_FILE)
-                except: heartbeats["GUI Dashboard (PyQt)"]["time"] = now
+                try: heartbeats["GUI Dashboard"]["time"] = os.path.getmtime(GUI_DATA_FILE)
+                except: heartbeats["GUI Dashboard"]["time"] = now
             else:
-                heartbeats["GUI Dashboard (PyQt)"]["time"] = now
+                heartbeats["GUI Dashboard"]["time"] = now
         else:
-            heartbeats["GUI Dashboard (PyQt)"]["status"] = "STOPPED"
+            heartbeats["GUI Dashboard"]["status"] = "STOPPED"
 
         for m_name, widgets in self.rows.items():
             data = heartbeats[m_name]
@@ -143,10 +143,10 @@ class SupervisorGUI:
                 widgets["stat"].config(text="RUNNING", bg="#27AE60")
                 if data["time"] > 0:
                     t_str = time.strftime('%H:%M:%S', time.localtime(data["time"])); diff = int(now - data["time"])
-                    widgets["hb"].config(text=f"{t_str} (Aktif)" if diff < 5 else f"{t_str} ({diff}s delay)", fg="#2ECC71" if diff < 5 else "#F1C40F")
+                    widgets["hb"].config(text=f"{t_str} (Active)" if diff < 5 else f"{t_str} ({diff}s delay)", fg="#2ECC71" if diff < 5 else "#F1C40F")
                 else: widgets["hb"].config(text="Starting...", fg="#F39C12")
             else: widgets["stat"].config(text="STOPPED", bg="#C0392B"); widgets["hb"].config(text="-- : -- : --", fg="#BDC3C7")
         self.root.after(500, self.update_ui_loop)
 
 if __name__ == "__main__":
-    load_config(); root = tk.Tk(); app = SupervisorGUI(root); root.after(1000, app.start_all); root.mainloop()
+    load_config(); root = tk.Tk(); app = ControlPanel(root); root.after(1000, app.start_all); root.mainloop()

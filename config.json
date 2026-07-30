@@ -25,11 +25,6 @@
         "excel_interval_seconds": 10,
         "influx_interval_seconds": 2
     },
-    "settings_auth": {
-        "salt": "cbdfde7977b14478cb56afb91634c9a2",
-        "password_hash": "1ee0354909caf6ee9d368cf1b9dbc5b62f832514d38570323bdb277dae87f1d5",
-        "iterations": 200000
-    },
     "lcd_visible_items": [
         "TSU Oil Level",
         "TSU Oil Temperature",
@@ -49,6 +44,9 @@
         "U-V Phase Voltage",
         "V-W Phase Voltage",
         "U-W Phase Voltage",
-        "U Phase Current", "V Phase Current", "W Phase Current", "Average Current"
+        "U Phase Current",
+        "V Phase Current",
+        "W Phase Current",
+        "Average Current"
     ]
 }

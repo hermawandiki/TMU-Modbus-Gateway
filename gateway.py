@@ -48,7 +48,6 @@ def handle_rtu_client(conn: socket.socket, addr, port: int, slave_id: int, bus, 
             if not tcp_req or len(tcp_req) < 8: break
             tx_id, unit_id, fc = tcp_req[0:2], tcp_req[6], tcp_req[7]
             
-            # [KUNCI ANTI CRASH] Jika dummy mode aktif, buat respons palsu yang valid dari lcd_values
             if dummy_mode:
                 if fc in (0x03, 0x04):
                     start_addr, qty = struct.unpack(">HH", tcp_req[8:12])
@@ -63,7 +62,6 @@ def handle_rtu_client(conn: socket.socket, addr, port: int, slave_id: int, bus, 
                     conn.sendall(res)
                 continue
 
-            # Jika dummy mode False, gunakan komunikasi serial RS485 normal
             rtu_res = bus.send_and_receive(tcp2rtu(tcp_req, slave_id))
             if rtu_res and validate_crc16(rtu_res):
                 if slave_id == 1 and fc in (0x03, 0x04):

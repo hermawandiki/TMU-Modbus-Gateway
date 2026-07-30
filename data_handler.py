@@ -14,7 +14,6 @@ from PIL import Image, ImageDraw, ImageFont
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 GUI_DATA_FILE = os.path.join(BASE_DIR, "gui_data.json")
 
-# Inisialisasi Hardware (Aman dari error jika hardware fisik tidak terpasang)
 try:
     adc = Adafruit_ADS1x15.ADS1115(address=0x48, busnum=1)
 except Exception:
@@ -127,7 +126,6 @@ class SerialBus:
                 self._ser = None
                 return b""
 
-# --- GENERATOR DATA SIMULASI ---
 def inject_dummy_data():
     with lcd_lock:
         lcd_values[1] = round(random.uniform(50.0, 52.0), 2)  # TSU Oil Temp
